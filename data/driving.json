@@ -1,0 +1,64 @@
+{
+  "meta": { "domain": "driving-intelligence", "updated": "2026-09-15", "note": "This layer is the structured concept space for driving in South Africa. The ontology is taxonomy (treated as settled definitions); empirical quantities are explicitly flagged need-field-measurement. Nothing here replaces measured data." },
+  "environment": [
+    { "name": "Road", "nodes": ["national highway", "provincial main road", "district road", "municipal road", "private road", "mine road", "farm road", "urban arterial", "urban collector", "local street"] },
+    { "name": "Lane / cross-section", "nodes": ["lane", "shoulder", "median", "safety barrier", "sidewalk", "paved verge", "unpaved verge", "grass strip"] },
+    { "name": "Junctions", "nodes": ["intersection", "roundabout", "traffic circle", "mini-circle", "yield junction", "unmarked junction", "merge", "ramp", "railway crossing", "pedestrian crossing", "toll plaza"] },
+    { "name": "Context zones", "nodes": ["bus stop", "taxi rank (formal)", "informal taxi stop", "loading zone", "parking area", "school zone", "roadworks zone", "tunnel", "bridge", "construction site", "informal roadside market"] },
+    { "name": "Road class realities", "nodes": ["gravel road", "dirt track", "faded-marking tar", "potholed tar", "rutted road", "flood-prone causeway"] }
+  ],
+  "roadMarkings": [
+    { "name": "Longitudinal", "nodes": ["centre line", "lane line", "edge line", "guideline", "no-passing line", "faded markings", "missing markings"] },
+    { "name": "Transverse", "nodes": ["stop line", "yield line", "pedestrian markings", "stop-box markings", "turning arrows", "lane arrows", "speed hump markings"] },
+    { "name": "Special", "nodes": ["taxi-rank hatching", "bus lanes", "toll markings", "reserved lane text", "temporary works markings"] }
+  ],
+  "signs": [
+    { "category": "Regulatory", "nodes": ["speed limit", "stop", "yield", "no entry", "no overtaking", "mass/dimension restriction", "reserved lane", "parking control"] },
+    { "category": "Warning", "nodes": ["hazard", "curve", "steep grade", "pedestrian", "children", "animals", "roadworks", "loose gravel", "flood", "level crossing"] },
+    { "category": "Informational / directional", "nodes": ["route marker (N-road shields)", "city/town board", "advance direction", "toll", "service area", "border post"] },
+    { "category": "Temporary / works", "nodes": ["construction", "lane closure", "flagman", "contra-flow", "temporary speed"] },
+    { "note": "SA signage quality varies sharply (metropolitan standard vs faded/missing on rural and informal-urban roads). Signage state is itself an ODD variable, not a given." }
+  ],
+  "trafficControl": [
+    { "name": "Signalised", "nodes": ["traffic light", "peek phases", "bus priority", "pedestrian phase", "traffic-light failure", "flashing operation"] },
+    { "name": "Non-signalised", "nodes": ["stop sign", "yield sign", "priority rule", "unmarked junction priority risk"] },
+    { "name": "Human control", "nodes": ["traffic officer", "security guard at gate", "flagman at works", "police checkpoint", "taxi rank marshal"] },
+    { "name": "Failure modes (SA-specific)", "nodes": ["load-shedding signal outage", "solar glare on controllers", "vandalised/cables stolen", "powered-down controller", "unmaintained timings"] }
+  ],
+  "roadUsers": [
+    { "name": "Pedestrians", "nodes": ["jaywalking", "crossing outside infrastructure", "walking in carriageway", "informal-park pedestrians", "school children", "commuters near ranks"] },
+    { "name": "Cyclists / motorcyclists", "nodes": ["cycle lane absence", "filtering", "high-visibility delivery riders", "bicycle taxis (urban)" ] },
+    { "name": "Public transport", "nodes": ["minibus taxi (emergency stop, rank pull-out, chase behaviour)", "bus (BRT corridor)", "meter taxi / e-hailing"] },
+    { "name": "Commercial", "nodes": ["articulated truck", "rigid truck", "abnormal load / convoy", "tanker", "bakkie", "delivery vehicle", "garbage collection", "construction machinery"] },
+    { "name": "Special", "nodes": ["emergency vehicle (with/without lights)", "police", "animal-drawn cart", "livestock crossing", "wildlife (KZN/LP/conservancy roads)", "roadside worker", "informal vendor in carriageway margin"] }
+  ],
+  "conditions": {
+    "surface": ["asphalt", "concrete", "gravel", "dirt", "degraded pavement", "potholes", "rutting", "standing water", "loose material", "slippery worn tar"],
+    "geometry": ["lane width variance", "curvature", "grade", "elevation", "sight distance", "junction density", "merge/ramp geometry", "shoulder width"],
+    "weather": ["rain", "fog", "dust", "smoke (veld fire)", "glare", "night (unlit)", "heat haze", "wind", "flood wash-away", "hail"],
+    "infraHealth": ["road condition", "signage condition", "line-marking quality", "traffic-light availability", "street lighting", "barriers", "pedestrian facilities", "communications coverage", "GNSS reliability", "charging availability"]
+  },
+  "behaviouralVariables": [
+    { "variable": "minibus taxi emergency stops", "state": "UNMEASURED", "measurement": "Requires dashcam/video analytics on metro arterials; frequency/kinematics dataset missing." },
+    { "variable": "jaywalking density", "state": "UNMEASURED", "measurement": "Pedestrian trajectory datasets by corridor/time-of-day awaited." },
+    { "variable": "lane/line discipline (overtaking across markings)", "state": "UNMEASURED", "measurement": "Camera analytics along N-corridors." },
+    { "variable": "shoulder driving", "state": "UNMEASURED", "measurement": "Congestion-peak camera measurement on tri-state urban arterials." },
+    { "variable": "speed distribution", "state": "PARTIAL", "measurement": "RTMC/arrive-alive aggregation exists; corridor-level distribution to be built." },
+    { "variable": "drunk-driving & fatigue proxies", "state": "PARTIAL-UNVERIFIED", "measurement": "Enforcement statistics only; formal measurement gap." },
+    { "variable": "congestion regimes & shockwave behaviour", "state": "PARTIAL", "measurement": "Metro GPS/telematics data exists privately (Mix/Ctrack) \u2014 commercial licence needed." },
+    { "variable": "traffic-light failure frequency", "state": "UNMEASURED", "measurement": "Municipal fault logs; load-shedding correlation to be quantified." },
+    { "variable": "pothole/debris density", "state": "UNMEASURED", "measurement": "Camera/ML pothole surveys per municipality." },
+    { "variable": "informal roadside commerce exposure", "state": "UNMEASURED", "measurement": "Geo-annotated market/street-vending layer." },
+    { "variable": "animal intrusion risk", "state": "UNMEASURED", "measurement": "Wildlife/crossing data for LP/KZN/NC routes." },
+    { "variable": "motorcycle/livery-rider filtering", "state": "UNMEASURED", "measurement": "Urban camera analytics." },
+    { "principle": "Treat every behaviour as a measurable environmental variable. Do not stereotype. Do not code cultural assumptions into models. Measure, then design ODD." }
+  ],
+  "oddModel": {
+    "dimensions": ["geography", "roadType", "weather", "lighting", "trafficDensity", "speed", "vehicleType", "operationalHours", "infrastructureRequirements", "mappingRequirements", "connectivityRequirements", "behaviouralEnvelope"],
+    "principle": "Evaluate every system against WHERE it can safely operate, not merely HOW autonomous the vehicle is.",
+    "exampleEnvelope": {
+      "mining": { "geography": "geofenced mine", "roadType": "private mine roads", "weather": "day/dry/clear", "lighting": "day + floodlights", "traffic": "controlled fleet + light workers", "speed": "<40 km/h", "vehicle": "haul truck/utility", "hours": "day shift", "infra": "private network", "mapping": "mine survey HD map", "connectivity": "LTE/private", "behaviour": "known fleet actors" },
+      "urbanShuttle": { "geography": "geofenced campus/estate", "roadType": "private/semi-private", "weather": "day/clear", "lighting": "day", "traffic": "low-moderate", "speed": "<30 km/h", "vehicle": "electric shuttle", "hours": "07-19", "infra": "curbs+V2X-readiness", "mapping": "pre-mapped", "connectivity": "LTE", "behaviour": "workers/residents" }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "meta": { "domain": "geography", "updated": "2026-09-15", "note": "Population = Statistics South Africa Census 2022 results as compiled by national statistics release. Coordinates are approximate city/province centroids for schematic map display; precise geometry to be refined." },
+  "provinces": [
+    { "name": "Gauteng", "iso": "ZA-GP", "capital": "Johannesburg", "areaKm2": 18180, "population": 15099421, "lat": -26.10, "lon": 28.10, "note": "Smallest province, highest population density. Dominant economic node. ~20% of national road fatalities (RTMC 2025)." },
+    { "name": "KwaZulu-Natal", "iso": "ZA-KZN", "capital": "Pietermaritzburg", "areaKm2": 94364, "population": 12423908, "lat": -28.50, "lon": 30.50, "note": "Port city Durban, Durban-Gauteng N3 freight corridor, ports of Durban/Richards Bay." },
+    { "name": "Western Cape", "iso": "ZA-WC", "capital": "Cape Town", "areaKm2": 129465, "population": 7433022, "lat": -33.10, "lon": 21.40, "note": "Cape Town metro, Port of Cape Town, wine route / N1/N2 origin, leading EV charging presence." },
+    { "name": "Eastern Cape", "iso": "ZA-EC", "capital": "Bhisho", "areaKm2": 168967, "population": 7230204, "lat": -32.30, "lon": 26.50, "note": "VWSA Kariega, MBSA East London, Isuzu/Nissan engine & Ford Struandale plants, ports Gqeberha/Ngqura/East London. Former Transkei/Ciskei rural road networks." },
+    { "name": "Limpopo", "iso": "ZA-LP", "capital": "Polokwane", "areaKm2": 125756, "population": 6572720, "lat": -23.90, "lon": 29.40, "note": "PGM belt (Mogalakwena), Beitbridge border on N1, coal (Grootegeluk)." },
+    { "name": "Mpumalanga", "iso": "ZA-MP", "capital": "Mbombela", "areaKm2": 76496, "population": 5143326, "lat": -25.60, "lon": 30.50, "note": "Coal (Emalahleni/Secunda/Middelburg), Maputo corridor N4, Kruger access." },
+    { "name": "North West", "iso": "ZA-NW", "capital": "Mahikeng", "areaKm2": 104882, "population": 3804546, "lat": -26.00, "lon": 25.50, "note": "Platinum belt (Rustenburg), Impala/Sibanye operations, N4 to Botswana." },
+    { "name": "Northern Cape", "iso": "ZA-NC", "capital": "Kimberley", "areaKm2": 372887, "population": 1355948, "lat": -29.50, "lon": 21.60, "note": "Largest area, lowest density. Iron ore (Sishen/Kolomela), manganese (Hotazel/Black Rock), Sishen-Saldanha ore rail line, N14." },
+    { "name": "Free State", "iso": "ZA-FS", "capital": "Bloemfontein", "areaKm2": 129828, "population": 2964411, "lat": -28.50, "lon": 26.80, "note": "Goldfields (Welkom/Virginia), N1 and N3 transit province, Mangaung metro." }
+  ],
+  "metros": [
+    { "name": "City of Johannesburg", "province": "Gauteng", "lat": -26.204, "lon": 28.047, "pop": "~6.1m metro group", "kind": "Gauteng mega-region" },
+    { "name": "City of Tshwane (Pretoria)", "province": "Gauteng", "lat": -25.748, "lon": 28.229, "pop": "~4m", "kind": "Capital; BMW Rosslyn; Gerotek test facility nearby" },
+    { "name": "Ekurhuleni (East Rand)", "province": "Gauteng", "lat": -26.210, "lon": 28.170, "pop": "~4m", "kind": "O.R. Tambo; logistics/warehousing density" },
+    { "name": "eThekwini (Durban)", "province": "KwaZulu-Natal", "lat": -29.859, "lon": 31.022, "pop": "~3.9m", "kind": "Port + N3 origin; Toyota SA" },
+    { "name": "City of Cape Town", "province": "Western Cape", "lat": -33.925, "lon": 18.424, "pop": "~4.8m", "kind": "Port; tech ecosystem; NWU/UCT; leading EV infra" },
+    { "name": "Nelson Mandela Bay (Gqeberha)", "province": "Eastern Cape", "lat": -33.965, "lon": 25.601, "pop": "~1.2m", "kind": "Ports Gqeberha + Ngqura; VWSA/Isuzu/Ford engine" },
+    { "name": "Buffalo City (East London)", "province": "Eastern Cape", "lat": -32.987, "lon": 27.868, "pop": "~0.9m", "kind": "MBSA plant; port" },
+    { "name": "Mangaung (Bloemfontein)", "province": "Free State", "lat": -29.085, "lon": 26.160, "pop": "~0.9m", "kind": "N1/N3 junction province capital" }
+  ],
+  "cities": [
+    { "name": "Polokwane", "province": "Limpopo", "lat": -23.896, "lon": 29.449, "kind": "Provincial capital; N1 to Beitbridge" },
+    { "name": "Mbombela (Nelspruit)", "province": "Mpumalanga", "lat": -25.465, "lon": 30.983, "kind": "Provincial capital; N4 Maputo corridor" },
+    { "name": "Kimberley", "province": "Northern Cape", "lat": -28.728, "lon": 24.750, "kind": "Provincial capital; N12" },
+    { "name": "Rustenburg", "province": "North West", "lat": -25.546, "lon": 27.149, "kind": "Platinum mining hub; N4" },
+    { "name": "Mahikeng", "province": "North West", "lat": -25.853, "lon": 25.608, "kind": "Provincial capital" },
+    { "name": "Pietermaritzburg", "province": "KwaZulu-Natal", "lat": -29.601, "lon": 30.379, "kind": "KZN capital; N3 mid-point" },
+    { "name": "eMalahleni (Witbank)", "province": "Mpumalanga", "lat": -25.855, "lon": 29.110, "kind": "Coal corridor; N4" },
+    { "name": "Secunda", "province": "Mpumalanga", "lat": -26.518, "lon": 29.165, "kind": "Sasol; N17" },
+    { "name": "Richards Bay", "province": "KwaZulu-Natal", "lat": -28.780, "lon": 32.038, "kind": "Bulk export port" },
+    { "name": "Newcastle", "province": "KwaZulu-Natal", "lat": -27.748, "lon": 29.933, "kind": "N11 corridor; steel" },
+    { "name": "Lephalale", "province": "Limpopo", "lat": -23.667, "lon": 27.750, "kind": "Exxaro Grootegeluk coal; Matimba power" },
+    { "name": "Saldanha", "province": "Western Cape", "lat": -33.017, "lon": 17.944, "kind": "Iron ore export port" },
+    { "name": "George", "province": "Western Cape", "lat": -33.962, "lon": 22.461, "kind": "N2 Garden Route node" },
+    { "name": "Musina", "province": "Limpopo", "lat": -22.350, "lon": 30.040, "kind": "Beitbridge border (N1 terminus)" },
+    { "name": "Upington", "province": "Northern Cape", "lat": -28.447, "lon": 21.245, "kind": "N14; N10" },
+    { "name": "Klerksdorp", "province": "North West", "lat": -26.875, "lon": 26.652, "kind": "N12; goldfields" },
+    { "name": "Worcester", "province": "Western Cape", "lat": -33.647, "lon": 19.442, "kind": "N1 pass route" },
+    { "name": "Beaufort West", "province": "Western Cape", "lat": -32.356, "lon": 22.586, "kind": "N1 mid-country stop; Karoo" }
+  ],
+  "ports": [
+    { "name": "Port of Durban", "lat": -29.872, "lon": 31.027, "kind": "Container + breakbulk; Africa's busiest container port" },
+    { "name": "Port of Cape Town", "lat": -33.916, "lon": 18.439, "kind": "Container + multi-purpose" },
+    { "name": "Port of Ngqura (Coega)", "lat": -33.802, "lon": 25.689, "kind": "Deepwater container + transshipment" },
+    { "name": "Port of Gqeberha", "lat": -33.958, "lon": 25.629, "kind": "Multi-purpose, car exports" },
+    { "name": "Port of East London", "lat": -33.035, "lon": 27.915, "kind": "Car exports (MBSA)" },
+    { "name": "Port of Richards Bay", "lat": -28.820, "lon": 32.025, "kind": "Bulk coal/woodchip export" },
+    { "name": "Port of Saldanha Bay", "lat": -33.017, "lon": 17.944, "kind": "Iron ore export; oil & gas potential" },
+    { "name": "Port of Mossel Bay", "lat": -34.183, "lon": 22.133, "kind": "Harbour; marine gas" }
+  ],
+  "airports": [
+    { "name": "O.R. Tambo International", "lat": -26.136, "lon": 28.241, "kind": "Primary international gateway" },
+    { "name": "Cape Town International", "lat": -33.971, "lon": 18.602, "kind": "International" },
+    { "name": "King Shaka International", "lat": -29.618, "lon": 31.110, "kind": "International (Durban)" },
+    { "name": "Lanseria", "lat": -25.938, "lon": 27.926, "kind": "Gauteng business airport" },
+    { "name": "Bram Fischer (Bloemfontein)", "lat": -29.097, "lon": 26.302, "kind": "Domestic" },
+    { "name": "Kruger Mpumalanga (Mbombela)", "lat": -25.383, "lon": 31.106, "kind": "Domestic/regional" },
+    { "name": "Polokwane", "lat": -23.846, "lon": 29.462, "kind": "Domestic" },
+    { "name": "Port Elizabeth", "lat": -33.985, "lon": 25.611, "kind": "Domestic" },
+    { "name": "Kimberley", "lat": -28.803, "lon": 24.765, "kind": "Domestic" },
+    { "name": "Upington", "lat": -28.400, "lon": 21.260, "kind": "Domestic (NC)" }
+  ],
+  "economicRegions": [
+    { "name": "Gauteng City-Region (GCR)", "provinces": ["Gauteng"], "kind": "Industrial/commercial/financial core; densest logistics network" },
+    { "name": "Platinum Belt", "provinces": ["North West", "Limpopo"], "kind": "PGM mining; RSA = world's dominant platinum supplier" },
+    { "name": "Coal & Power Belt (Mpumalanga)", "provinces": ["Mpumalanga"], "kind": "Thermal coal, concessions, Sasol petrochemicals" },
+    { "name": "Manganese & Iron-Ore Fields", "provinces": ["Northern Cape"], "kind": "Sishen/Kolomela iron ore; Hotazel manganese; ore-to-port rail" },
+    { "name": "Eastern Cape Automotive Belt", "provinces": ["Eastern Cape"], "kind": "Export vehicle manufacturing corridor (Nelson Mandela Bay / Buffalo City)" },
+    { "name": "KZN Heavy Freight Corridor", "provinces": ["KwaZulu-Natal"], "kind": "Ports of Durban/Richards Bay → N3/N2 → inland" },
+    { "name": "Western Cape Circular", "provinces": ["Western Cape"], "kind": "Port + agriculture + tech; N7/N1/N2/Route-62 spokes" },
+    { "name": "Northern Cross-Border Belt", "provinces": ["Limpopo"], "kind": "Beitbridge/Groblersbrug crosses; SADC road freight" }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "meta": { "domain": "research-ecosystem", "updated": "2026-09-15", "note": "Focused on the SA autonomous-mobility research graph. Institutional capability claims labelled with confidence; verify lab-by-lab before external use." },
+  "hubs": [
+    {
+      "id": "ENG-4.0",
+      "name": "Engineering 4.0 (University of Pretoria / SANRAL / CSIR research ecosystem)",
+      "city": "Pretoria / national",
+      "kind": "Smart-transport research environment",
+      "focus": "Smart transport, infrastructure intelligence, traffic analysis, vehicle dynamics, semi-/autonomous vehicles.",
+      "saSignal": "The single most important SA research ecosystem for mobility autonomy bridging roads + vehicles + AI.",
+      "confidence": "HIGH (via client brief; verify scope and current projects)",
+      "lat": -25.754, "lon": 28.232,
+      "evidence": [
+        { "claim": "UP, SANRAL and CSIR have built a smart-transport research ecosystem spanning road infrastructure, traffic analysis, vehicle dynamics and semi-/autonomous vehicles.", "source": "Client operational brief; institutional public descriptions", "publisher": "UP / SANRAL / CSIR", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 80, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "CSIR-TSL",
+      "name": "CSIR Transport Safety Laboratory",
+      "city": "Pretoria",
+      "kind": "Transport safety testing & research lab",
+      "focus": "Human factors, road infrastructure, traffic engineering, vehicle safety technologies, ADAS and autonomous-driving evaluation.",
+      "saSignal": "A functional SA test/evaluation nucleus exists for ADAS/AV (not a public-road licence, but a validation asset).",
+      "confidence": "HIGH (via client brief; verify facilities & equipment list)",
+      "lat": -25.759, "lon": 28.263,
+      "evidence": [
+        { "claim": "CSIR's Transport Safety Laboratory works across human factors, road infrastructure, traffic engineering and vehicle safety technologies incl. ADAS/AV evaluation.", "source": "Client operational brief", "publisher": "CSIR", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 80, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "UP-TEP",
+      "name": "University of Pretoria (Engineering 4.0 / SARChI chairs)",
+      "city": "Pretoria",
+      "kind": "Engineering/research university",
+      "focus": "Transport engineering, ITS, vehicle dynamics, AI/robotics, engineering 4.0 digital factory lines.",
+      "confidence": "MEDIUM-HIGH",
+      "lat": -25.754, "lon": 28.232
+    },
+    {
+      "id": "SU",
+      "name": "Stellenbosch University",
+      "city": "Stellenbosch",
+      "kind": "Engineering university",
+      "focus": "Mechanical/mechatronic engineering, vehicle dynamics, e-mobility and EV powertrain research; verify specific AV projects.",
+      "confidence": "MEDIUM",
+      "lat": -33.933, "lon": 18.861
+    },
+    {
+      "id": "UCT",
+      "name": "University of Cape Town",
+      "city": "Cape Town",
+      "kind": "Research university",
+      "focus": "Transport studies, urban mobility, AI & computer vision research; emerging robotics/AI labs.",
+      "confidence": "MEDIUM",
+      "lat": -33.958, "lon": 18.460
+    },
+    {
+      "id": "WITS",
+      "name": "University of the Witwatersrand",
+      "city": "Johannesburg",
+      "kind": "Research university",
+      "focus": "Wits AI research, robotics lab, engineering; transport/electric mobility research pockets.",
+      "confidence": "MEDIUM",
+      "lat": -26.192, "lon": 28.033
+    },
+    {
+      "id": "UJ",
+      "name": "University of Johannesburg",
+      "city": "Johannesburg",
+      "kind": "Engineering university",
+      "focus": "Mechatronics, automotive and energy research; verify smart-mobility projects.",
+      "confidence": "MEDIUM",
+      "lat": -26.183, "lon": 28.003
+    },
+    {
+      "id": "UKZN",
+      "name": "University of KwaZulu-Natal",
+      "city": "Durban / Pietermaritzburg",
+      "kind": "Engineering university",
+      "focus": "Transport engineering, logistics, hydrogen research (HySA); port-logistics research nexus.",
+      "confidence": "MEDIUM",
+      "lat": -29.867, "lon": 30.981
+    },
+    {
+      "id": "NWU",
+      "name": "North-West University",
+      "city": "Potchefstroom",
+      "kind": "Engineering university",
+      "focus": "Mechanical/vehicle engineering, hydrogen research; vehicle dynamics strength.",
+      "confidence": "MEDIUM",
+      "lat": -26.710, "lon": 27.099
+    },
+    {
+      "id": "NMU",
+      "name": "Nelson Mandela University",
+      "city": "Gqeberha",
+      "kind": "Engineering university",
+      "focus": "Automotive engineering programs; sits in the Eastern Cape automotive belt.",
+      "confidence": "MEDIUM",
+      "lat": -34.003, "lon": 25.671
+    }
+  ],
+  "testAssets": [
+    { "name": "Gerotek Test Facilities (Armscor)", "city": "Near Pretoria", "kind": "Vehicle dynamics test track", "note": "SA's principal vehicle dynamics testing ground; applicability for AV validation (controlled surfaces, ADAS sensor benchmarking) to be assessed.", "confidence": "HIGH (facility exists); AV-suitability UNVERIFIED" },
+    { "name": "CSIR Transport Safety Laboratory", "city": "Pretoria", "kind": "Safety/ADAS evaluation lab", "note": "Human factors + vehicle safety tech evaluation.", "confidence": "HIGH" },
+    { "name": "Mining operations (private ODD)", "city": "NC / NW / LP", "kind": "Private geofenced ODD", "note": "Mines are the only large private controlled road environment in SA today \u2014 the practical near-term autonomy test beds.", "confidence": "HIGH" },
+    { "name": "AIDC Gauteng / test routes", "city": "Rosslyn", "kind": "Automotive supplier development + possible closed test routes", "note": "Verify facility status.", "confidence": "MEDIUM" }
+  ],
+  "capabilityMatrix": {
+    "perceptionResearch": ["UP (AI/vision)", "UCT (CV/AI)", "Wits (AI/robotics)", "Stellenbosch (mechatronics)"],
+    "vehicleDynamics": ["UP", "Stellenbosch", "NWU", "CSIR"],
+    "transportTrafficEngineering": ["UP (Engineering 4.0)", "CSIR", "UCT (Transport Studies)"],
+    "portLogistics": ["UKZN", "Grindrod/DP World industry", "Transnet"],
+    "miningTechResearch": ["Industry-led (Anglo/Kumba) + UP Wits mining engineering", "verify"],
+    "safetyAndHumanFactors": ["CSIR Transport Safety Lab", "UNISA/psychology (verify)"],
+    "simulationSoftware": ["No national-scale autonomy simulation platform known \u2014 GAP"]
+  },
+  "researchGraph": [
+    { "from": "University of Pretoria", "rel": "hosts/researches", "to": "Engineering 4.0 smart-transport ecosystem", "kind": "research-hub" },
+    { "from": "SANRAL", "rel": "co-funds + provides road data", "to": "Engineering 4.0", "kind": "partnership" },
+    { "from": "CSIR", "rel": "co-contributes labs/data", "to": "Engineering 4.0", "kind": "partnership" },
+    { "from": "CSIR", "rel": "operates", "to": "Transport Safety Laboratory", "kind": "facility" },
+    { "from": "Mines (Anglo/Kumba)", "rel": "provide private ODD + capital", "to": "Mining autonomy deployment", "kind": "deployment" },
+    { "from": "OEMs (SA)", "rel": "produce export vehicles with ADAS", "to": "SA vehicle fleet", "kind": "asset" },
+    { "from": "Mix/Ctrack", "rel": "produce", "to": "National telematics/fleet data", "kind": "data-asset" },
+    { "from": "RTMC", "rel": "custodian of", "to": "National crash database", "kind": "data-asset" },
+    { "from": "DoT", "rel": "regulates", "to": "Public-road AV operation", "kind": "regulation" }
+  ],
+  "gaps": [
+    "No national-scale autonomy simulation capability known (CARLA/SUMO clusters, scenario ecosystems)",
+    "No published SA open driving dataset (perception/scenes)",
+    "No SA HD-map/localisation service",
+    "Perception/detection benchmarking resources tied to local conditions are absent",
+    "Cross-university AV consortium absent (list is a candidate, not a reality)"
+  ]
+}

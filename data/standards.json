@@ -1,0 +1,21 @@
+{
+  "meta": { "domain": "international-standards", "updated": "2026-09-15", "note": "Status of each standard must be verified against the issuing body (ISO, ISO/SAE, UNECE) before it is presented as current. Edition numbers and publication years below reflect the commonly published versions; audit before reliance." },
+  "standards": [
+    { "id": "ISO-26262", "title": "ISO 26262 (Road vehicles \u2014 Functional safety)", "edition": "2018 (2nd ed.)", "status": "VERIFY-EDITIONS", "scope": "Safety lifecycle for E/E systems in road vehicles; ASIL allocation.", "saRelevance": "Component-level safety case foundation for any local vehicle/ADS project." },
+    { "id": "ISO/PAS-21448", "title": "ISO/PAS 21448 SOTIF (Safety Of The Intended Functionality)", "edition": "2019 (PAS)", "status": "VERIFY-EDITIONS", "scope": "Residual risk from intended functionality incl. perception limitations.", "saRelevance": "Critical for perception validation on SA roads; evolving into full ISO 21448." },
+    { "id": "ISO/SAE-21434", "title": "ISO/SAE 21434 (Cyber security engineering)", "edition": "2021", "status": "VERIFY-EDITIONS", "scope": "Cybersecurity risk management across vehicle lifecycle.", "saRelevance": "Basis for the cyber risk score; fleet security architecture." },
+    { "id": "ISO-24089", "title": "ISO 24089 (Road vehicles \u2014 Software update engineering)", "edition": "2023", "status": "VERIFY-EDITIONS", "scope": "OTA / update management.", "saRelevance": "OTA safety and governance for fleets." },
+    { "id": "ISO-34501", "title": "ISO 34501 (Terms and definitions for testing of automated driving systems)", "edition": "2022", "status": "VERIFY-EDITIONS", "scope": "Vocabulary for ADS testing.", "saRelevance": "Common language for the scenario library." },
+    { "id": "ISO-34502", "title": "ISO 34502 (Scenario-based safety evaluation framework)", "edition": "2022", "status": "VERIFY-EDITIONS", "scope": "Framework for scenario-based safety evaluation.", "saRelevance": "Backbone for SA scenario library methodology." },
+    { "id": "ISO-34503", "title": "ISO 34503 (ODD taxonomy for ADS)", "edition": "2023", "status": "VERIFY-EDITIONS", "scope": "Standardised taxonomy for Operational Design Domain.", "saRelevance": "ODD description standard for all corridor/mine pilot plans here." },
+    { "id": "ISO-34504", "title": "ISO 34504 (Scenario categorization)", "edition": "2024 (TR/IS \u2014 verify status)", "status": "VERIFY-STATUS", "scope": "Taxonomy for classifying scenarios.", "saRelevance": "Scenario library categorisation." },
+    { "id": "UN-R155", "title": "UN Reg. No. 155 (Cyber security and cyber security management systems)", "edition": "E/F in force 2021 (WP.29)", "status": "VERIFY-SA-APPLICABILITY", "scope": "Type-approval cyber requirements.", "saRelevance": "Whether SA homologation references R155 depends on national regulation; verify." },
+    { "id": "UN-R156", "title": "UN Reg. No. 156 (Software update and software update management system)", "edition": "In force 2021 (WP.29)", "status": "VERIFY-SA-APPLICABILITY", "scope": "SUMS requirements.", "saRelevance": "OTA governance; verify SA application." },
+    { "id": "UN-R157", "title": "UN Reg. No. 157 (Automated Lane Keeping Systems \u2014 ALKS)", "edition": "In force Jan 2021 (WP.29)", "status": "VERIFY-SA-APPLICABILITY", "scope": "First binding ADS regulation; L3 ALKS up to defined speeds on motorways.", "saRelevance": "Template for any SA L3 highway regime; assess whether SA is an EU/ECE operating market for type approval." }
+  ],
+  "notes": [
+    "South Africa's status under WP.29 (whether and how UN vehicle regulations apply to locally registered vehicles) must be verified; RSA vehicle approval historically references SABS/e-Mark practices without full WP.29 membership.",
+    "For any maintained system, version each standard with edition + year + verification date; a document from 2018 must never be presented as 'current' without audit.",
+    "The SA-specific reference: SANS standards and NRTA schedules amend vehicle requirements independently; keep the standards layer distinct from the legal layer."
+  ]
+}

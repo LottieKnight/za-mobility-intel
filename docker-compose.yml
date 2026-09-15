@@ -1,0 +1,22 @@
+# ZA Mobility Intelligence — compose deployment
+#   docker compose up -d --build
+# Optional GR Yaris simulator sidecar (Phase-3 harness). Without it the
+# Simulation Runner panel reports the sim directory as unavailable.
+services:
+  za-mobility-intel:
+    build: .
+    image: za-mobility-intel:latest
+    container_name: za-mobility-intel
+    restart: unless-stopped
+    ports:
+      - "4173:4173"
+    volumes:
+      - uploads:/srv/za-mobility-intel/data/uploads
+    environment:
+      - PORT=4173
+      # point at a mounted gr_yaris_sim checkout if you want the sim runner:
+      # - GR_YARIS_SIM=/srv/gr_yaris_sim
+      # - GR_YARIS_SIM_PY=/srv/gr_yaris_sim/venv/bin/python
+
+volumes:
+  uploads:

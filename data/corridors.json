@@ -1,0 +1,118 @@
+{
+  "meta": { "domain": "corridors", "updated": "2026-09-15", "note": "Corridor autonomy scores are produced by the scoring engine from the per-factor inputs below. Any factor marked src=MISSING is excluded and shown as unknown (⌀); the composite reports data coverage. Alignments are schematic via major-city waypoints and must be refined against OSM / SANRAL network files. Lengths are approximate." },
+  "factorMeta": [
+    { "key": "roadQuality", "label": "Road quality", "dir": "+" },
+    { "key": "laneCount", "label": "Lane count / width", "dir": "+" },
+    { "key": "trafficVolume", "label": "Traffic volume", "dir": "~" },
+    { "key": "trafficVariability", "label": "Traffic variability", "dir": "-" },
+    { "key": "crashDensity", "label": "Crash density", "dir": "-" },
+    { "key": "pedestrianExposure", "label": "Pedestrian exposure", "dir": "-" },
+    { "key": "commercialImportance", "label": "Commercial importance", "dir": "+" },
+    { "key": "freightVolume", "label": "Freight volume", "dir": "+" },
+    { "key": "connectivity", "label": "Connectivity", "dir": "+" },
+    { "key": "weatherRisk", "label": "Weather risk (inverted)", "dir": "-" },
+    { "key": "nightDrivingRisk", "label": "Night-driving risk (inverted)", "dir": "-" },
+    { "key": "mappingAvailability", "label": "Mapping availability", "dir": "+" },
+    { "key": "chargingInfra", "label": "Charging infrastructure", "dir": "+" },
+    { "key": "emergencyResponse", "label": "Emergency response", "dir": "+" },
+    { "key": "localizationConfidence", "label": "Localization confidence", "dir": "+" },
+    { "key": "autonomyComplexity", "label": "Autonomy complexity (inverted)", "dir": "-" },
+    { "key": "economicValue", "label": "Economic value", "dir": "+" }
+  ],
+  "corridors": [
+    {
+      "id": "N3", "ref": "N3", "name": "Durban\u2013Gauteng freight corridor",
+      "route": "Durban \u2192 Pietermaritzburg \u2192 Harrismith \u2192 Heidelberg \u2192 Johannesburg",
+      "provinces": ["KwaZulu-Natal", "Free State", "Gauteng"],
+      "lengthKm": 578, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-29.86,31.02],[-29.60,30.38],[-28.28,29.13],[-27.53,29.19],[-26.52,28.37],[-26.20,28.05]],
+      "note": "South Africa's busiest inland freight corridor linking Port of Durban to Gauteng. Tolled (N3TC). Multi-lane with pinch sections; upgrades ongoing.",
+      "factors": { "roadQuality": { "v": 78, "src": "ESTIMATED" }, "laneCount": { "v": 72, "src": "ESTIMATED" }, "trafficVolume": { "v": 88, "src": "ESTIMATED" }, "trafficVariability": { "v": 55, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 60, "src": "ESTIMATED" }, "commercialImportance": { "v": 95, "src": "ESTIMATED" }, "freightVolume": { "v": 95, "src": "ESTIMATED" }, "connectivity": { "v": 80, "src": "ESTIMATED" }, "weatherRisk": { "v": 45, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 50, "src": "ESTIMATED" }, "mappingAvailability": { "v": 55, "src": "ESTIMATED" }, "chargingInfra": { "v": 30, "src": "ESTIMATED" }, "emergencyResponse": { "v": 60, "src": "ESTIMATED" }, "localizationConfidence": { "v": 62, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 55, "src": "ESTIMATED" }, "economicValue": { "v": 96, "src": "ESTIMATED" } },
+      "assessment": "HV: Long-haul platooning / hub-to-hub trucking candidate once regulatory ODD for controlled-access operation exists. Strong commercial logic; highest freight exposure in the country."
+    },
+    {
+      "id": "N1", "ref": "N1", "name": "Cape Town\u2013Johannesburg\u2013Beitbridge spine",
+      "route": "Cape Town \u2192 Worcester \u2192 Beaufort West \u2192 Bloemfontein \u2192 Johannesburg \u2192 Pretoria \u2192 Polokwane \u2192 Musina (Beitbridge)",
+      "provinces": ["Western Cape", "Northern Cape", "Free State", "Gauteng", "Limpopo"],
+      "lengthKm": 1936, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-33.92,18.42],[-33.65,19.44],[-32.36,22.59],[-29.09,26.16],[-26.20,28.05],[-25.75,28.23],[-23.90,29.45],[-22.35,30.04]],
+      "note": "National spine + SADC transit via Beitbridge. Long rural sections (Karoo) with low traffic but sustained speeds; Gauteng/Limpopo ends more complex.",
+      "factors": { "roadQuality": { "v": 66, "src": "ESTIMATED" }, "laneCount": { "v": 55, "src": "ESTIMATED" }, "trafficVolume": { "v": 60, "src": "ESTIMATED" }, "trafficVariability": { "v": 40, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 55, "src": "ESTIMATED" }, "commercialImportance": { "v": 80, "src": "ESTIMATED" }, "freightVolume": { "v": 70, "src": "ESTIMATED" }, "connectivity": { "v": 55, "src": "ESTIMATED" }, "weatherRisk": { "v": 30, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 45, "src": "ESTIMATED" }, "mappingAvailability": { "v": 45, "src": "ESTIMATED" }, "chargingInfra": { "v": 25, "src": "ESTIMATED" }, "emergencyResponse": { "v": 30, "src": "ESTIMATED" }, "localizationConfidence": { "v": 50, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 35, "src": "ESTIMATED" }, "economicValue": { "v": 78, "src": "ESTIMATED" } },
+      "assessment": "Medium-term highway platooning and rest-stop automation. Long monotonous sections good for L3/4 trucking ODD; SADC throughput creates regional (African) pilot logic."
+    },
+    {
+      "id": "N2", "ref": "N2", "name": "Southern coastal corridor",
+      "route": "Cape Town \u2192 George \u2192 Gqeberha \u2192 East London \u2192 Mthatha \u2192 Durban",
+      "provinces": ["Western Cape", "Eastern Cape", "KwaZulu-Natal"],
+      "lengthKm": 2250, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-33.92,18.42],[-33.96,22.46],[-33.96,25.60],[-32.99,27.87],[-31.59,28.78],[-29.86,31.02]],
+      "note": "Garden Route tourist segments and Wild Coast community-road segments (poor condition, high pedestrian/animals). Heterogeneous — ideal for demonstrating ODD segmentation.",
+      "factors": { "roadQuality": { "v": 40, "src": "ESTIMATED" }, "laneCount": { "v": 42, "src": "ESTIMATED" }, "trafficVolume": { "v": 40, "src": "ESTIMATED" }, "trafficVariability": { "v": 55, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 72, "src": "ESTIMATED" }, "commercialImportance": { "v": 55, "src": "ESTIMATED" }, "freightVolume": { "v": 40, "src": "ESTIMATED" }, "connectivity": { "v": 35, "src": "ESTIMATED" }, "weatherRisk": { "v": 50, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 60, "src": "ESTIMATED" }, "mappingAvailability": { "v": 30, "src": "ESTIMATED" }, "chargingInfra": { "v": 30, "src": "ESTIMATED" }, "emergencyResponse": { "v": 35, "src": "ESTIMATED" }, "localizationConfidence": { "v": 40, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 70, "src": "ESTIMATED" }, "economicValue": { "v": 45, "src": "ESTIMATED" } },
+      "assessment": "NOT a first pilot corridor. Useful as a stress-test environment for perception/ODD edge cases and a data-collection corridor."
+    },
+    {
+      "id": "N4E", "ref": "N4", "name": "Maputo Corridor (East)",
+      "route": "Pretoria \u2192 eMalahleni \u2192 Middelburg \u2192 Mbombela \u2192 Komatipoort \u2192 Mozambique",
+      "provinces": ["Gauteng", "Mpumalanga"],
+      "lengthKm": 471, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-25.75,28.23],[-25.86,29.11],[-25.77,29.46],[-25.47,30.98],[-25.43,31.95]],
+      "note": "Tolled Trans-African concession; coal traffic into Maputo port. Regional (SADC) corridor.",
+      "factors": { "roadQuality": { "v": 75, "src": "ESTIMATED" }, "laneCount": { "v": 62, "src": "ESTIMATED" }, "trafficVolume": { "v": 55, "src": "ESTIMATED" }, "trafficVariability": { "v": 40, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 50, "src": "ESTIMATED" }, "commercialImportance": { "v": 72, "src": "ESTIMATED" }, "freightVolume": { "v": 68, "src": "ESTIMATED" }, "connectivity": { "v": 55, "src": "ESTIMATED" }, "weatherRisk": { "v": 42, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 45, "src": "ESTIMATED" }, "mappingAvailability": { "v": 48, "src": "ESTIMATED" }, "chargingInfra": { "v": 25, "src": "ESTIMATED" }, "emergencyResponse": { "v": 42, "src": "ESTIMATED" }, "localizationConfidence": { "v": 52, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 45, "src": "ESTIMATED" }, "economicValue": { "v": 72, "src": "ESTIMATED" } },
+      "assessment": "Candidate for first SADC-international autonomous freight pilot given concentration of coal/PGM logistics and a single tolled operator."
+    },
+    {
+      "id": "N4W", "ref": "N4", "name": "Rustenburg\u2013Botswana corridor (West)",
+      "route": "Pretoria \u2192 Rustenburg \u2192 Zeerust \u2192 Kopfontein (Botswana)",
+      "provinces": ["Gauteng", "North West"],
+      "lengthKm": 240, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-25.75,28.23],[-25.55,27.15],[-25.54,26.08],[-25.33,25.75]],
+      "note": "Serves platinum belt logistics into Botswana. Moderate volumes, tolled portions.",
+      "factors": { "roadQuality": { "v": 70, "src": "ESTIMATED" }, "laneCount": { "v": 55, "src": "ESTIMATED" }, "trafficVolume": { "v": 45, "src": "ESTIMATED" }, "trafficVariability": { "v": 42, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 48, "src": "ESTIMATED" }, "commercialImportance": { "v": 60, "src": "ESTIMATED" }, "freightVolume": { "v": 55, "src": "ESTIMATED" }, "connectivity": { "v": 45, "src": "ESTIMATED" }, "weatherRisk": { "v": 35, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 40, "src": "ESTIMATED" }, "mappingAvailability": { "v": 40, "src": "ESTIMATED" }, "chargingInfra": { "v": 20, "src": "ESTIMATED" }, "emergencyResponse": { "v": 40, "src": "ESTIMATED" }, "localizationConfidence": { "v": 45, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 40, "src": "ESTIMATED" }, "economicValue": { "v": 58, "src": "ESTIMATED" } },
+      "assessment": "Platinum-belt logistics feeder; part of an end-to-end mining-logistics autonomy storyline."
+    },
+    {
+      "id": "N12", "ref": "N12", "name": "Port Elizabeth\u2013Gauteng / NC resource corridor",
+      "route": "Gqeberha \u2192 Graaff-Reinet \u2192 Kimberley \u2192 Klerksdorp \u2192 Potchefstroom \u2192 Johannesburg",
+      "provinces": ["Eastern Cape", "Northern Cape", "North West", "Gauteng"],
+      "lengthKm": 1240, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-33.96,25.60],[-32.25,24.53],[-28.73,24.75],[-26.88,26.65],[-26.72,27.00],[-26.20,28.05]],
+      "note": "Secondary freight route into Northern Cape; links automotive belt to Gauteng.",
+      "factors": { "roadQuality": { "v": 52, "src": "ESTIMATED" }, "laneCount": { "v": 45, "src": "ESTIMATED" }, "trafficVolume": { "v": 35, "src": "ESTIMATED" }, "trafficVariability": { "v": 35, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 40, "src": "ESTIMATED" }, "commercialImportance": { "v": 45, "src": "ESTIMATED" }, "freightVolume": { "v": 40, "src": "ESTIMATED" }, "connectivity": { "v": 35, "src": "ESTIMATED" }, "weatherRisk": { "v": 35, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 42, "src": "ESTIMATED" }, "mappingAvailability": { "v": 30, "src": "ESTIMATED" }, "chargingInfra": { "v": 18, "src": "ESTIMATED" }, "emergencyResponse": { "v": 25, "src": "ESTIMATED" }, "localizationConfidence": { "v": 38, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 45, "src": "ESTIMATED" }, "economicValue": { "v": 48, "src": "ESTIMATED" } },
+      "assessment": "Lower priority; useful for mining-corridor autonomy story when coupled with NC resource routes."
+    },
+    {
+      "id": "N17", "ref": "N17", "name": "Secunda\u2013Gauteng chemical/coal corridor",
+      "route": "Johannesburg \u2192 Springs \u2192 Secunda \u2192 Bethal \u2192 Ermelo \u2192 Mozambique border",
+      "provinces": ["Gauteng", "Mpumalanga"],
+      "lengthKm": 320, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-26.20,28.05],[-26.25,28.41],[-26.52,29.17],[-26.46,29.46],[-26.53,29.98],[-25.72,31.89]],
+      "note": "Sasol logistics artery; corridor of controlled industrial traffic.",
+      "factors": { "roadQuality": { "v": 60, "src": "ESTIMATED" }, "laneCount": { "v": 50, "src": "ESTIMATED" }, "trafficVolume": { "v": 42, "src": "ESTIMATED" }, "trafficVariability": { "v": 38, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 45, "src": "ESTIMATED" }, "commercialImportance": { "v": 55, "src": "ESTIMATED" }, "freightVolume": { "v": 52, "src": "ESTIMATED" }, "connectivity": { "v": 40, "src": "ESTIMATED" }, "weatherRisk": { "v": 38, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 42, "src": "ESTIMATED" }, "mappingAvailability": { "v": 36, "src": "ESTIMATED" }, "chargingInfra": { "v": 20, "src": "ESTIMATED" }, "emergencyResponse": { "v": 40, "src": "ESTIMATED" }, "localizationConfidence": { "v": 44, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 42, "src": "ESTIMATED" }, "economicValue": { "v": 55, "src": "ESTIMATED" } },
+      "assessment": "Controlled industrial logistics candidate if partnered with a major single shipper (e.g. Sasol ecosystem)."
+    },
+    {
+      "id": "N14", "ref": "N14", "name": "Northern Cape resources\u2013Gauteng corridor",
+      "route": "Springbok \u2192 Upington \u2192 Kuruman \u2192 Vryburg \u2192 Krugersdorp",
+      "provinces": ["Northern Cape", "North West", "Gauteng"],
+      "lengthKm": 1162, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-29.67,17.88],[-28.45,21.24],[-27.46,23.43],[-26.96,24.73],[-26.10,27.77]],
+      "note": "Long, sparsely trafficked resource corridor; manganese transport trend line.",
+      "factors": { "roadQuality": { "v": 45, "src": "ESTIMATED" }, "laneCount": { "v": 40, "src": "ESTIMATED" }, "trafficVolume": { "v": 25, "src": "ESTIMATED" }, "trafficVariability": { "v": 30, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 25, "src": "ESTIMATED" }, "commercialImportance": { "v": 35, "src": "ESTIMATED" }, "freightVolume": { "v": 35, "src": "ESTIMATED" }, "connectivity": { "v": 28, "src": "ESTIMATED" }, "weatherRisk": { "v": 28, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 35, "src": "ESTIMATED" }, "mappingAvailability": { "v": 25, "src": "ESTIMATED" }, "chargingInfra": { "v": 12, "src": "ESTIMATED" }, "emergencyResponse": { "v": 18, "src": "ESTIMATED" }, "localizationConfidence": { "v": 30, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 55, "src": "ESTIMATED" }, "economicValue": { "v": 40, "src": "ESTIMATED" } },
+      "assessment": "Low-density/high-straightness profile is autonomy-friendly on perception, but weak connectivity and emergency response; trucking platooning research value."
+    },
+    {
+      "id": "N7", "ref": "N7", "name": "West Coast\u2013Namibia corridor",
+      "route": "Cape Town \u2192 Springbok \u2192 Vioolsdrift (Namibia)",
+      "provinces": ["Western Cape", "Northern Cape"],
+      "lengthKm": 665, "lengthSrc": "ESTIMATED",
+      "waypoints": [[-33.92,18.42],[-29.67,17.88],[-28.77,17.62]],
+      "note": "Namaqualand coast / copper corridor to Namibia.",
+      "factors": { "roadQuality": { "v": 48, "src": "ESTIMATED" }, "laneCount": { "v": 40, "src": "ESTIMATED" }, "trafficVolume": { "v": 22, "src": "ESTIMATED" }, "trafficVariability": { "v": 28, "src": "ESTIMATED" }, "crashDensity": { "v": null, "src": "MISSING" }, "pedestrianExposure": { "v": 25, "src": "ESTIMATED" }, "commercialImportance": { "v": 32, "src": "ESTIMATED" }, "freightVolume": { "v": 30, "src": "ESTIMATED" }, "connectivity": { "v": 26, "src": "ESTIMATED" }, "weatherRisk": { "v": 30, "src": "ESTIMATED" }, "nightDrivingRisk": { "v": 32, "src": "ESTIMATED" }, "mappingAvailability": { "v": 24, "src": "ESTIMATED" }, "chargingInfra": { "v": 12, "src": "ESTIMATED" }, "emergencyResponse": { "v": 20, "src": "ESTIMATED" }, "localizationConfidence": { "v": 30, "src": "ESTIMATED" }, "autonomyComplexity": { "v": 45, "src": "ESTIMATED" }, "economicValue": { "v": 30, "src": "ESTIMATED" } },
+      "assessment": "Regional trucking research corridor; not near-term."
+    }
+  ],
+  "internal": {
+    "municipalRoads": { "note": "Metropolitan arterials (Johannesburg, Tshwane, eThekwini, Cape Town) score HIGH autonomy complexity and HIGH economic value; metro data awaited. The taxi-populated arterials (e.g. Bree/Eloff in Joburg, Point Road in Durban) are the maximum-complexity benchmark for urban ODD research.", "quality": "MISSING" },
+    "mineRoads": { "note": "Private mine roads: the most controllable ODD in SA. Represented under mining domain.", "quality": "KNOWN-QUALITATIVE" }
+  }
+}

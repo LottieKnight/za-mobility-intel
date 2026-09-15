@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "domain": "regulation",
+    "updated": "2026-09-15",
+    "note": "Do not confuse policy intention with actual law. Each instrument is typed as LAW / REGULATION / POLICY / STRATEGY / PROPOSAL / GOVERNMENT STATEMENT / INDUSTRY POSITION. Statuses move through: Proposed > Draft > Public Comment > Under Review > Approved > Gazetted > Commenced > Operational > Superseded. Verify the latest consolidated text via SAFLII, Juta, or the Government Printing Works before relying on any clause. This tracker is intelligence, not legal advice."
+  },
+  "pipeline": ["Proposed", "Draft", "Public Comment", "Under Review", "Approved", "Gazetted", "Commenced", "Operational", "Superseded"],
+  "instruments": [
+    {
+      "id": "NRTA-1996",
+      "title": "National Road Traffic Act 93 of 1996",
+      "category": "LAW",
+      "status": "Commenced",
+      "statusNote": "In force, frequently amended.",
+      "relevance": "DIRECT",
+      "significance": "Primary road traffic statute: vehicle standards, roadworthiness, driver obligations, road rules, licensing. Contains NO comprehensive automated driving regime. Under the current text an operator-driver obligation framework applies to vehicles driven on a public road.",
+      "avGap": "No framework for L3+ without a human driver in control; no certification path for automated driving systems; testing regime effectively unspecified.",
+      "evidence": [
+        { "claim": "National Road Traffic Act 93 of 1996 is the operative road traffic law of South Africa.", "source": "Government text (consolidated via SAFLII)", "publisher": "Republic of South Africa", "date": "1996/CF", "url": null, "type": "PRIMARY", "confidence": 90, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "NRTR-2000",
+      "title": "National Road Traffic Regulations, 2000 (as amended)",
+      "category": "REGULATION",
+      "status": "Commenced",
+      "statusNote": "In force; frequently amended.",
+      "relevance": "DIRECT",
+      "significance": "Operational detail under the NRTA: road rules, vehicle registration, roadworthiness, dimensions/mass, traffic signs.",
+      "avGap": "No automated-driving licence or ADS-equipment regime.",
+      "evidence": [
+        { "claim": "Regulations pursuant to the NRTA govern road rules and vehicle standards.", "source": "Government Notices under Act 93/1996", "publisher": "Republic of South Africa", "date": "2000/CF", "url": null, "type": "PRIMARY", "confidence": 88, "verified": "2026-09-15", "note": "Verify specific Government Notice number and latest amendment." }
+      ]
+    },
+    {
+      "id": "RTMCA-1999",
+      "title": "Road Traffic Management Corporation Act 20 of 1999",
+      "category": "LAW",
+      "status": "Operational",
+      "statusNote": "RTMC established; operating.",
+      "relevance": "DIRECT",
+      "significance": "RTMC: implements the NRTA, manages the National Crash Database / crash data, and coordinates road traffic law enforcement, driver licensing, and road safety programmes. Key institutional partner for crash data ingestion.",
+      "avGap": "Crash data is the single highest-value dataset for autonomy safety modelling; formal data-sharing with AV testing is not established.",
+      "evidence": [
+        { "claim": "RTMC is the implementation agency for the NRTA and custodian of national road traffic data.", "source": "Act text + RTMC mandate", "publisher": "Republic of South Africa", "date": "1999", "url": null, "type": "PRIMARY", "confidence": 90, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "SANRAL-1998",
+      "title": "SANRAL Act 7 of 1998",
+      "category": "LAW",
+      "status": "Operational",
+      "statusNote": "Active.",
+      "relevance": "ADJACENT",
+      "significance": "National roads agency; owns/operates the national toll & freeway network; partner for corridor pilots and digital-road-twin data.",
+      "avGap": "Road/traffic data product ecosystem is nascent.",
+      "evidence": [
+        { "claim": "SANRAL manages the national road network.", "source": "Act text", "publisher": "Republic of South Africa", "date": "1998", "url": null, "type": "PRIMARY", "confidence": 90, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "NLTA-2009",
+      "title": "National Land Transport Act 5 of 2009",
+      "category": "LAW",
+      "status": "Commenced",
+      "statusNote": "In force.",
+      "relevance": "ADJACENT",
+      "significance": "Public transport planning and operating licences (bus, taxi, shuttle); governs any public-transport pilot including autonomous shuttles operating as public transport.",
+      "avGap": "No category for an autonomous public-transport operator; permits assume a licensed driver operator.",
+      "evidence": [
+        { "claim": "The NLTA regulates public transport operating licences.", "source": "Act text", "publisher": "Republic of South Africa", "date": "2009", "url": null, "type": "PRIMARY", "confidence": 88, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "NLTSF",
+      "title": "National Land Transport Strategic Framework",
+      "category": "STRATEGY",
+      "status": "Superseded",
+      "statusNote": "Prior framework cycles (e.g. NLTSF 2017\u20132022) largely elapsed; successor framework status must be verified.",
+      "relevance": "ADJACENT",
+      "significance": "Sets public-transport and mobility priorities; mobility-as-a-service and pilot language may be found here.",
+      "avGap": "Does not constitute law; position/priority only.",
+      "evidence": [
+        { "claim": "NLTSF is a policy framework, not legislation.", "source": "DoT publications", "publisher": "Department of Transport", "date": "2017/CF", "url": null, "type": "PRIMARY", "confidence": 70, "verified": "2026-09-15", "note": "Verify current cycle." }
+      ]
+    },
+    {
+      "id": "DOT-AV-PRIORITY",
+      "title": "DoT priority: legislative framework for autonomous vehicle technology",
+      "category": "GOVERNMENT STATEMENT",
+      "status": "Public Comment",
+      "statusNote": "Department of Transport has previously identified development of a legislative framework for autonomous vehicle technology as a priority. Treat as evidence of direction and of possible upcoming consultation, NOT as enacted law.",
+      "relevance": "CRITICAL-TO-MONITOR",
+      "significance": "If converted into formal regulation, this becomes the trigger condition for public-road testing/deployment. Its absence is currently the single largest legal blocker for public-road autonomy.",
+      "avGap": "Primary blocker: no gazetted automated-driving instrument exists (as at the state of knowledge in this tracker).",
+      "evidence": [
+        { "claim": "Development of a legislative framework for autonomous vehicle technology has been identified as a priority by the Department of Transport.", "source": "Client operational brief + DoT public statements", "publisher": "Department of Transport", "date": "Various", "url": null, "type": "PRIMARY", "confidence": 65, "verified": "2026-09-15", "note": "Locate the authoritative DoT pronouncement/document and track to gazette." }
+      ]
+    },
+    {
+      "id": "EV-WHITE-PAPER",
+      "title": "Electric Vehicles White Paper (dtic)",
+      "category": "POLICY",
+      "status": "Approved",
+      "statusNote": "Published December 2023 by the Department of Trade, Industry and Competition.",
+      "relevance": "CONTEXT",
+      "significance": "Policy direction toward new-energy vehicles and localisation; supports the electrification-autonomy convergence logic.",
+      "avGap": "White paper is policy intent, not a binding levy/tariff regime.",
+      "evidence": [
+        { "claim": "An Electric Vehicles White Paper was published by the dtic in December 2023.", "source": "dtic publication", "publisher": "Department of Trade, Industry and Competition", "date": "2023-12", "url": null, "type": "PRIMARY", "confidence": 72, "verified": "2026-09-15", "note": "Verify final gazetted status and subsequent implementation decisions." }
+      ]
+    },
+    {
+      "id": "APDP",
+      "title": "Automotive Production Development Programme (APDP) 2021\u20132035",
+      "category": "POLICY",
+      "status": "Operational",
+      "statusNote": "Incentive framework phase II.",
+      "relevance": "CONTEXT",
+      "significance": "Localisation incentives framework for vehicle/component production; vehicle-built localisation and NEV support may be extended toward electronic/software components.",
+      "avGap": "Autonomy-specific components not separately incentivised (verify current qualification criteria).",
+      "evidence": [
+        { "claim": "APDP is South Africa's automotive incentive framework (phase II to 2035).", "source": "dtic / ITAC programme documents", "publisher": "dtic", "date": "2021", "url": null, "type": "PRIMARY", "confidence": 78, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "POPIA",
+      "title": "Protection of Personal Information Act 4 of 2013 (POPIA)",
+      "category": "LAW",
+      "status": "Commenced",
+      "statusNote": "Commencement 1 July 2020; obligations 1 July 2021.",
+      "relevance": "DIRECT-DATA",
+      "significance": "Governs collection of camera/telematics/personal data for datasets and fleet analytics. Any SA driving dataset, dashcam program, or behaviour research must be POPIA-compliant (lawful basis, purpose limitation, de-identification).",
+      "avGap": "Clean-data licensing and de-identification workflows are not standard in the SA AV industry.",
+      "evidence": [
+        { "claim": "POPIA is in force and regulates processing of personal information in South Africa.", "source": "Act text; Information Regulator guidance", "publisher": "Republic of South Africa", "date": "2020/2021", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "CYBER-CRIMES",
+      "title": "Cybercrimes Act 19 of 2020",
+      "category": "LAW",
+      "status": "Commenced",
+      "statusNote": "Commencement 1 December 2021.",
+      "relevance": "CONTEXT",
+      "significance": "Cyber-physical vehicle/back-end attacks engage this statute; fleet security incidents have criminal-law consequences.",
+      "avGap": "No automotive-sector-specific cybersecurity standards are gazetted; ISO/SAE 21434 alignment is voluntary.",
+      "evidence": [
+        { "claim": "Cybercrimes Act in force since December 2021.", "source": "Act text", "publisher": "Republic of South Africa", "date": "2021", "url": null, "type": "PRIMARY", "confidence": 90, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "ECTA",
+      "title": "Electronic Communications and Transactions Act 25 of 2002",
+      "category": "LAW",
+      "status": "Commenced",
+      "statusNote": "In force (partly).",
+      "relevance": "CONTEXT",
+      "significance": "Framework for electronic transactions/signatures; minor relevance to remote operations and telemetry contracting.",
+      "avGap": "None material.",
+      "evidence": [
+        { "claim": "ECTA in force.", "source": "Act text", "publisher": "Republic of South Africa", "date": "2002", "url": null, "type": "PRIMARY", "confidence": 90, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "CPA",
+      "title": "Consumer Protection Act 68 of 2008",
+      "category": "LAW",
+      "status": "Commenced",
+      "statusNote": "In force (2011 onwards).",
+      "relevance": "CONTEXT",
+      "significance": "Product-liability-adjacent consumer protections relevant to personal AV/ADAS offerings.",
+      "avGap": "Automated-driving product liability allocation unsettled.",
+      "evidence": [
+        { "claim": "CPA in force.", "source": "Act text", "publisher": "Republic of South Africa", "date": "2008/2011", "url": null, "type": "PRIMARY", "confidence": 90, "verified": "2026-09-15" }
+      ]
+    },
+    {
+      "id": "AARTO",
+      "title": "Administrative Adjudication of Road Traffic Offences Act 46 of 1998 (AARTO)",
+      "category": "LAW",
+      "status": "Operational",
+      "statusNote": "Partially commenced and legally contested. Constitutional Court / SCA challenges (2022\u20132023) flagged defects (e.g. Oosthuizen v Minister). Status and rollout remain in flux.",
+      "relevance": "CONTEXT",
+      "significance": "Affects traffic enforcement architecture and how infringement (incl. potential automated-driving oversight) is adjudicated.",
+      "avGap": "Enforcement regime instability complicates liability/penalty design for automated operations.",
+      "evidence": [
+        { "claim": "AARTO is partially commenced and subject to appellate rulings.", "source": "Act text + SCA/CC rulings (Mokoena, Oosthuizen cases report)", "publisher": "Republic of South Africa / judiciary", "date": "1998/CF", "url": null, "type": "PRIMARY", "confidence": 70, "verified": "2026-09-15", "note": "Verify current rollout status provincially." }
+      ]
+    },
+    {
+      "id": "ROAD-SAFETY-STRATEGY",
+      "title": "National Road Safety Strategy (RSA 2016\u20132030 and revisions)",
+      "category": "STRATEGY",
+      "status": "Operational",
+      "statusNote": "Under revision toward post-2030 targets; monitor.",
+      "relevance": "ADJACENT",
+      "significance": "Contains targets around crash reduction; provides a policy hook to frame autonomy as a safety intervention rather than a novelty.",
+      "avGap": "Does not create testing rights.",
+      "evidence": [
+        { "claim": "National road safety strategy documents exist; revision status must be verified.", "source": "RTMC/DoT strategy documents", "publisher": "RTMC/DoT", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 60, "verified": "2026-09-15" }
+      ]
+    }
+  ],
+  "monitoringTargets": [
+    "Gazetted amendments to NRTA/NRTR mentioning automated vehicles or ADS",
+    "Any DoT 'autonomous vehicles' discussion paper / regulatory impact assessment",
+    "WP.29 (UNECE) contracting-party status for South Africa",
+    "SANS adoption of ISO 26262 / ISO/SAE 21434 / ISO 34501-series",
+    "Road Safety Strategy revision status",
+    "AARTO remedial legislation",
+    "Provincial/municipal by-law signals (e.g. e-hailing, micromobility, last-mile delivery drones/robots)",
+    "POPIA guidance on camera/AV data processing by SA Regulator"
+  ]
+}

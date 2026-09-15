@@ -1,0 +1,45 @@
+{
+  "meta": { "domain": "road-safety", "updated": "2026-09-15", "note": "National figures as cited in the client brief: RTMC State of Road Safety report dataset (2025). Provincial and corridor-level detail is a data gap to be filled from RTMC crash database, SISA, and provincial sources." },
+  "national": {
+    "fatalities": 11485,
+    "fatalCrashes": 9734,
+    "pedestrianSharePct": 45,
+    "gautengSharePct": 20,
+    "derived": [
+      { "label": "Road deaths per day", "value": 31.5, "calc": "11485 / 365", "src": "INFERRED" },
+      { "label": "One road death every", "value": "46 minutes", "calc": "365*24*60/11485", "src": "INFERRED" },
+      { "label": "Pedestrian deaths per year (est.)", "value": 5168, "calc": "0.45 * 11485", "src": "ESTIMATED" },
+      { "label": "Gauteng deaths per year (est.)", "value": 2297, "calc": "0.20 * 11485", "src": "ESTIMATED" }
+    ],
+    "evidence": [
+      { "claim": "11,485 road fatalities and 9,734 fatal crashes recorded (RTMC State of Road Safety, 2025).",
+        "source": "RTMC State of Road Safety Report (2025)", "publisher": "Road Traffic Management Corporation", "date": "2025", "url": null, "type": "PRIMARY", "confidence": 85, "verified": "2026-09-15", "note": "Figures sourced from client's operational brief; verify against gazetted RTMC release." }
+    ]
+  },
+  "province": [
+    { "province": "Gauteng", "sharePct": 20, "src": "VERIFIED-FROM-BRIEF", "fatalitiesEst": 2297, "note": "Highest share; dense metro arterials, pedestrian and taxi exposure." },
+    { "province": "KwaZulu-Natal", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "Eastern Cape", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "Western Cape", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "Limpopo", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "Mpumalanga", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "Free State", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "North West", "sharePct": null, "src": "UNKNOWN", "note": "Requires RTMC provincial breakdown." },
+    { "province": "Northern Cape", "sharePct": null, "src": "UNKNOWN", "note": "Large area, sparse network — high per-km risk profile suspected; unverified." }
+  ],
+  "causalDomains": [
+    { "domain": "Pedestrian exposure", "state": "OK", "signal": "45% of fatalities are pedestrians — among the highest shares globally.", "opportunity": "Geofenced low-speed autonomous shuttles, intelligent crossings, connected infrastructure and protective ADAS can be targeted precisely where pedestrian exposure concentrates.", "risk": "High-exposure zones are also the most complex perception environments." },
+    { "domain": "Night driving", "state": "UNVERIFIED", "signal": "National RTMC trend analyses typically show elevated night/holiday fatalities.", "opportunity": "L3/4 operation can be restricted to daylight ODD first — a strategic sequencing advantage, not a weakness.", "risk": "Night ODD remains a validation gap." },
+    { "domain": "Freight safety", "state": "UNVERIFIED", "signal": "Heavy-vehicle involvement widespread across N-corridor network; per-corridor crash data awaited.", "opportunity": "Corridor trucking safety analytics is a viable near-term service product.", "risk": "Long-haul fatigue and overload trends need measurement." },
+    { "domain": "Vulnerable road users", "state": "PARTIAL", "signal": "Pedestrians dominant; cyclists/motorcyclists/jaywalking data not yet consolidated.", "opportunity": "Perception benchmarks for PED/cyclist detection can become a South African validation asset.", "risk": "No local public detection benchmark dataset yet exists (data moat)." }
+  ],
+  "ingestionPath": [
+    "RTMC National Crash Database & Annual State of Road Safety reports",
+    "SISA (spatial incident) mapping per corridor/metro",
+    "Provincial transport departments' fatal-crash registries",
+    "Metro traffic-safety units (JMPD, TMPD, eThekwini, City of Cape Town)",
+    "Arrive Alive aggregated incident feeds",
+    "SANRAL incident + network performance data",
+    "Auto-dealer / short-term insurer claims patterns (PII-scrubbed, opt-in)"
+  ]
+}

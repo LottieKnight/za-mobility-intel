@@ -1,0 +1,37 @@
+{
+  "meta": { "domain": "safety-command-centre", "updated": "2026-09-15", "note": "Autonomous safety metrics. Principle: no safety metric is ever presented without source, methodology, sample size, confidence and test conditions. No SA autonomous-system safety data exists yet — all ADS fields below are MISSING/awaiting the first pilot or simulation. National crash statistics live in the road-safety domain." },
+  "nationalTraffic": {
+    "fatalities": 11485, "fatalCrashes": 9734, "pedestrianSharePct": 45,
+    "evidence": [{ "claim": "RTMC 2025 State of Road Safety figures (fatalities 11 485; fatal crashes 9 734; 45% pedestrians).", "source": "RTMC State of Road Safety 2025 (per client brief)", "publisher": "RTMC", "date": "2025", "url": null, "type": "PRIMARY", "confidence": 85, "verified": "2026-09-15" }]
+  },
+  "adsSafetyMetrics": {
+    "header": "Autonomous-system safety metrics (SA autonomous operations)",
+    "metrics": [
+      { "key": "kmBetweenInterventions", "label": "Km between interventions (disengagements)", "value": null, "state": "MISSING", "needed": "First pilot telemetry + standard disengagement definition" },
+      { "key": "kmBetweenHazardousEvents", "label": "Km between hazardous events", "value": null, "state": "MISSING", "needed": "Event-log taxonomy + pilot data" },
+      { "key": "falsePositiveRate", "label": "False-positive rate (perception)", "value": null, "state": "MISSING", "needed": "Benchmark dataset on SA scenes" },
+      { "key": "falseNegativeRate", "label": "False-negative rate (perception)", "value": null, "state": "MISSING", "needed": "Benchmark dataset on SA scenes" },
+      { "key": "pedDetection", "label": "Pedestrian detection performance", "value": null, "state": "MISSING", "needed": "SA-specific PED benchmark" },
+      { "key": "cyclistDetection", "label": "Cyclist detection performance", "value": null, "state": "MISSING", "needed": "SA-specific benchmark" },
+      { "key": "evRecognition", "label": "Emergency-vehicle recognition", "value": null, "state": "MISSING", "needed": "Scenario test (SC-006)" },
+      { "key": "constructionZone", "label": "Construction-zone performance", "value": null, "state": "MISSING", "needed": "Works-zone scenario suite" },
+      { "key": "nightPerf", "label": "Night performance", "value": null, "state": "MISSING", "needed": "Night ODD validation" },
+      { "key": "rainPerf", "label": "Rain performance", "value": null, "state": "MISSING", "needed": "Rain ODD validation" },
+      { "key": "poorRoadPerf", "label": "Poor-road performance (potholes, gravel, faded markings)", "value": null, "state": "MISSING", "needed": "SA road-condition test suite" },
+      { "key": "oddCoverage", "label": "ODD coverage (% of intended operation domain validated)", "value": null, "state": "MISSING", "needed": "ODD coverage matrix per pilot" }
+    ],
+    "presentationGuardrails": "Every ADS safety metric requires: source, methodology, sample size, confidence, test conditions (weather, road, traffic, lighting). A metric without these is a decoration, not a safety statement."
+  },
+  "disengagementFramework": {
+    "definition": "Propose a harmonised SA taxonomy: (1) Safety disengagement (system-initiated, collision imminent), (2) Operational disengagement (perception/planning limitation, no immediate risk), (3) Remote-operator takeover, (4) Manual-takeover-by-default. Publish counts, rates and causes per pilot.", 
+    "labelling": "PROPOSED-STANDARD"
+  },
+  "nationalSafetyModel": {
+    "interventions": [
+      { "lever": "Pedestrian-exposure reduction", "fit": "45% of fatalities are pedestrians; autonomous/connected interventions targeted where pedestrian exposure concentrates", "evidence": "RTMC 2025 (per brief)", "maturity": "research->pilot" },
+      { "lever": "Geofenced low-speed autonomous shuttles", "fit": "Controlled ODD on private land now; public land on regulatory trigger", "evidence": "Global shuttles precedent", "maturity": "pilot-ready-on-private-land" },
+      { "lever": "Corridor trucking safety (ADAS/telematics first)", "fit": "N3/N1 heavy-vehicle exposure; fleet analytics sellable today", "evidence": "Freight concentration (model-estimated)", "maturity": "commercial-now" },
+      { "lever": "Intelligent intersections / signal-outage mitigation", "fit": "Load-shedding signal failures are SA-specific", "evidence": "Unmeasured (measurement gap)", "maturity": "research" }
+    ]
+  }
+}

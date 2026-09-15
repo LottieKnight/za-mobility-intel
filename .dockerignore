@@ -1,0 +1,10 @@
+.git
+.gitignore
+node_modules
+README.md
+PHASES.md
+data/uploads/*.json
+*.log
+Dockerfile
+docker-compose.yml
+deploy/*.service

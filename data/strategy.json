@@ -1,0 +1,64 @@
+{
+  "meta": { "domain": "strategy", "updated": "2026-09-15", "note": "Strategic layer. Personal-capability fields should be updated by the operator as truth changes see Personal Strategic Graph below." },
+  "entryStrategy": {
+    "sequence": [
+      { "step": 1, "lane": "SOFTWARE & INTELLIGENCE", "moves": ["SAMRI/index product", "fleet safety analytics", "road-condition AI", "scenario library + simulation validation"], "capital": "R0.5m-R15m", "logic": "Low CAPEX, immediate customers, builds the data moat, no legal blocker." },
+      { "step": 2, "lane": "DATA & VALIDATION", "moves": ["SA road-scene dataset programme", "disengagement/perception benchmark service", "corridor telematics partnerships"], "capital": "R5m-R40m", "logic": "Data ownership + validation authority; feeds simulation and mines." },
+      { "step": 3, "lane": "CONTROLLED ODD DEPLOYMENT", "moves": ["mine perimeter autonomy services", "campus/estate shuttle pilot", "port facility automation services"], "capital": "R10m-R60m", "logic": "Private land, no regulatory change needed, builds fleet-ops capability." },
+      { "step": 4, "lane": "PUBLIC-ROAD EXPANSION", "moves": ["corridor trucking L3/4 pilots (on regulatory trigger)", "public transport e-autonomy pilot"], "capital": "R50m+", "logic": "Trigger: DoT automated-vehicle framework. Enter as operator/validated-partner, not stack builder." }
+    ]
+  },
+  "personalLayer": {
+    "note": "Personal Strategic Graph — operator to keep current.",
+    "currentCapabilities": ["Strategic intelligence architecture & research", "Systems engineering and analytics output frameworks", "Network access into transport/tech ecosystem"],
+    "missingCapabilities": ["Software/product engineering execution", "Data pipelines & ML operations", "Capital allocation", "Government/industry relationships at scale"],
+    "assets": ["This intelligence system", "Scenario/ODD/concept IP", "Research map of the ecosystem"],
+    "capitalConstraint": "Modest personal capital; pursue grants, procurement, partners, data-revenue first",
+    "highestLeverageNextMove": "Convert SAMRI + scenario library into one saleable advisory/analytics engagement (municipality, SANRAL, mining house or insurer) within 90 days — revenue + live data + credibility in one stroke."
+  },
+  "foresight": [
+    { "scenario": "Conservative", "probPct": 30, "probSrc": "ESTIMATED", "drivers": ["No regulatory trigger", "slow procurement"], "blockers": ["NRTA amendment inertia"], "winners": ["ADAS penetration", "telematics incumbents"], "losers": ["AV pilots", "public-road startups"], "actions": ["Focus on data + services; keep AV optionality cheap"] },
+    { "scenario": "Baseline", "probPct": 35, "probSrc": "ESTIMATED", "drivers": ["Mining/port automation proceeds", "controlled pilots on private land", "telematics growth"], "blockers": ["Public-road legality"], "winners": ["Miners", "logistics", "telematics", "universities"], "losers": ["None severe"], "actions": ["Secure mining + corridor data positions; prepare public-road playbook"] },
+    { "scenario": "Accelerated", "probPct": 15, "probSrc": "ESTIMATED", "drivers": ["DoT AV framework advances", "NEV industrialisation", "infrastructure + SADC corridors"], "blockers": ["Fiscal constraints", "Eskom/reliability"], "winners": ["First-mover operators", "validators", "dataset owners"], "losers": ["Late entrants"], "actions": ["Be the reference validators; hold the SA dataset moat"] },
+    { "scenario": "Disruptive (foreign entrants)", "probPct": 10, "probSrc": "ESTIMATED", "drivers": ["Global AV majors enter African markets"], "blockers": ["Local acceptance", "road conditions"], "winners": ["Global stacks (temporary)"], "losers": ["Local stacks (none exist)"], "actions": ["Position as SA-context layer: data, validation, ODD, integration"] },
+    { "scenario": "Fragmented", "probPct": 7, "probSrc": "ESTIMATED", "drivers": ["Sector-by-sector incompatible automation"], "blockers": ["No national standards"], "winners": ["Integration consultants"], "losers": ["Ecosystem coherence"], "actions": ["Build the interoperability layer / standards advocacy"] },
+    { "scenario": "African Export", "probPct": 3, "probSrc": "ESTIMATED", "drivers": ["SA solutions proven for emerging-market road reality"], "blockers": ["Startup capital", "policy"], "winners": ["SA dataset/validation/simulation/IP"], "losers": ["Import-dependence"], "actions": ["Design datasets and systems Africa-portable from day one"] }
+  ],
+  "africaFirst": {
+    "thesis": "South Africa = test market + technology laboratory + regional platform + African export base.",
+    "sequence": [
+      { "market": "South Africa", "role": "test/lab", "rationale": "Domain depth, controlling institutions, private-road ODDs" },
+      { "market": "Botswana & Namibia", "role": "early adjacent", "rationale": "SADC land borders, corridor continuity (N4/N1/N7), similar driving reality" },
+      { "market": "Mozambique / Zambia / Zimbabwe", "role": "corridor-linked", "rationale": "Port corridors physical continuity" },
+      { "market": "Kenya / Rwanda", "role": "policy-friendly", "rationale": "East African policy appetite for AV/EV pilots; Rwanda has notable policy-forward stance (verify)" },
+      { "market": "Nigeria / Ghana / Egypt / Morocco", "role": "large-scale later", "rationale": "Volume markets and urban mega-problems but harder operating environments" }
+    ],
+    "exportCategories": ["autonomous mining services", "logistics autonomy", "road-risk analytics", "African driving datasets", "fleet intelligence", "smart-road systems", "charging infrastructure", "remote operations", "simulation & validation", "regulatory technology"]
+  },
+  "partnershipCore": [
+    { "partner": "CSIR Transport Safety Lab", "why": "Existing ADAS/AV evaluation capability; validation authority", "theyGain": "Commercial validation pipeline, dataset access", "weGain": "Test capability + institutional credibility", "mvp": "Joint perception-benchmark pilot" },
+    { "partner": "Engineering 4.0 (UP)", "why": "Smart-transport research ecosystem + talent", "theyGain": "Data + industry-facing use cases", "weGain": "Research depth + student pipeline", "mvp": "Shared scenario/dataset research project" },
+    { "partner": "A mining house (Anglo/Kumba/Exxaro)", "why": "Private ODD + CAPEX + data", "theyGain": "Autonomy readiness analytics + ops support", "weGain": "Deployment proof + revenue", "mvp": "Mine-road readiness + safety-analytics engagement" },
+    { "partner": "A major 3PL / freight fleet", "why": "Telematics + corridor economics + pilots", "theyGain": "Safety/intelligence uplift", "weGain": "Live data + corridor access", "mvp": "Fleet safety analytics pilot on N3 corridor" },
+    { "partner": "SANRAL", "why": "National road data + corridor ownership", "theyGain": "Innovation program + readiness analytics", "weGain": "Road data + credibility", "mvp": "Corridor digital-twin pilot (N3)" },
+    { "partner": "RTMC", "why": "Crash database custodian", "theyGain": "Analytics capacity", "weGain": "National safety data (the key missing asset)", "mvp": "Crash-data analytics + safety targeted-deployment study" },
+    { "partner": "An insurer", "why": "Risk models as ADAS penetration rises", "theyGain": "SA-specific risk model", "weGain": "Revenue + usage data", "mvp": "ADAS-risk analytics proof-of-concept" }
+  ],
+  "doNow": "This week: (1) load real RTMC/provincial crash data, (2) shortlist one mining + one fleet partner, (3) stand up the corridor digital-twin schema for N3.",
+  "doThisMonth": "Build: SAMRI + scenario library as a saleable advisory package. Verify: DoT AV-framework statements and WP.29 applicability. Decide: mining-analytics or fleet-analytics first engagement.",
+  "doThisQuarter": "Acquire: one data asset (crash data licence or telematics dataset), one technical partner (CSIR/UP), and one live pilot engagement.",
+  "pilotTemplate": {
+    "name": "Autonomous Logistics Corridor",
+    "location": "Gauteng (industrial park \u2192 distribution hub)",
+    "vehicle": "Electric autonomous shuttle / truck",
+    "odd": "Geofenced; daytime; dry; controlled speed",
+    "tech": "Camera + Radar + GNSS + edge AI",
+    "infra": "V2X + HD map + charging + remote ops",
+    "safety": "Remote operator + emergency intervention + disengagement protocol",
+    "metrics": ["safety", "throughput", "intervention rate", "energy", "cost/km", "user acceptance"],
+    "duration": "12 weeks",
+    "partnership": "candidate list from partnershipCore",
+    "cost": "Estimate only \u2014 model after partner scoping",
+    "legalNote": "Confine to private land / controlled access unless DoT AV framework changes."
+  }
+}

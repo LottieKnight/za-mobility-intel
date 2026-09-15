@@ -1,0 +1,41 @@
+{
+  "meta": { "domain": "knowledge-gaps", "updated": "2026-09-15", "note": "A strong intelligence platform is defined by awareness of its blind spots. Prominently visible register of what is not known." },
+  "register": [
+    { "id": "KG-01", "topic": "Per-corridor crash density (N-road level)", "state": "MISSING", "route": "RTMC crash database / SISA", "impact": "Corridor readiness scores are partial until present" },
+    { "id": "KG-02", "topic": "Provincial fatality shares beyond Gauteng 20%", "state": "UNKNOWN", "route": "RTMC provincial reports", "impact": "Weakens provincial readiness ranking" },
+    { "id": "KG-03", "topic": "Any gazetted/operative automated-driving instrument in RSA", "state": "UNVERIFIED", "route": "SAFLII/GPW tracking", "impact": "The cardinal legal fact for the whole system" },
+    { "id": "KG-04", "topic": "SA contracting-party status under UNECE WP.29", "state": "UNKNOWN", "route": "UNECE registry", "impact": "Determines which UN vehicle regs apply to local vehicles" },
+    { "id": "KG-05", "topic": "Behavioural frequency data (taxi stops, jaywalking, shoulder driving)", "state": "UNMEASURED", "route": "Field camera/telematics measurement", "impact": "Behaviour model is placeholder until measured" },
+    { "id": "KG-06", "topic": "Publicly available SA driving/scene dataset", "state": "NONE-KNOWN", "route": "Existence audit; then dataset strategy", "impact": "The data moat decision" },
+    { "id": "KG-07", "topic": "Grid/charging reliability profile for corridors", "state": "PARTIAL", "route": "Eskom + charging-operator data", "impact": "EV-autonomy convergence modelling" },
+    { "id": "KG-08", "topic": "Mining autonomy deployment detail (site-by-site, OEM scope)", "state": "PARTIAL-UNVERIFIED", "route": "OEM/miner disclosures", "impact": "Mining engine precision" },
+    { "id": "KG-09", "topic": "Public acceptance evidence (survey vs sentiment)", "state": "UNCOLLECTED", "route": "Structured survey programme", "impact": "Deployment sequencing" },
+    { "id": "KG-10", "topic": "EV/autonomy whitepaper-to-regulation conversion status", "state": "UNVERIFIED", "route": "dtic/DoT tracker", "impact": "Industrial strategy planning" },
+    { "id": "KG-11", "topic": "Telematics-data commercial licensability (Mix/Ctrack etc.)", "state": "UNKNOWN", "route": "Commercial conversations", "impact": "Data-moat execution" },
+    { "id": "KG-12", "topic": "Whether any SA enterprise is building AV/ADS software privately", "state": "UNKNOWN", "route": "Scout programme", "impact": "Competitive map completeness" },
+    { "id": "KG-13", "topic": "Current roadway GNSS/localisation performance at corridor level", "state": "UNMEASURED", "route": "Field GPS/RTK surveys", "impact": "Localization confidence scores" },
+    { "id": "KG-14", "topic": "Crash-data quality & POPIA pathway for use", "state": "UNVERIFIED", "route": "RTMC data licence", "impact": "Safety models" }
+  ],
+  "blindSpots": [
+    "Insurance & liability allocation for autonomous operations",
+    "Cyber risk scoring (vehicle attack surface data) — no methodology loaded",
+    "Labour & social impact (driver/taxi workforce transition data)",
+    "Taxation, customs & import duties on AV components",
+    "Vehicle maintenance/sensor-calibration lifecycle costs",
+    "Police & emergency-services interaction procedures for autonomous vehicles",
+    "Disaster/emergency response to autonomous-fleet incidents",
+    "Accessibility & universal-design requirements for AV public transport",
+    "African-market homologation & cross-border regulatory interoperability",
+    "Meteorological/seasonal recording standards (road-condition data quality)",
+    "Data governance for municipal traffic-control telemetry (who owns what)",
+    "Regional municipal by-law heterogeneity affecting pilots"
+  ],
+  "dataAssetsNeeded": [
+    { "asset": "National crash database licence", "owner": "RTMC", "status": "negotiate/request" },
+    { "asset": "Corridor GPS/traffic traces", "owner": "Telematics operators", "status": "commercial" },
+    { "asset": "Municipal road-condition registries", "owner": "Metros / SANRAL", "status": "request" },
+    { "asset": "Charging-station registry & reliability", "owner": "GridCars et al.", "status": "commercial" },
+    { "asset": "Weather/station data", "owner": "SAWS", "status": "request/commercial" },
+    { "asset": "Field-camera datasets (self-collected)", "owner": "Us", "status": "build Phase 2-3" }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "meta": { "domain": "mining-autonomy", "updated": "2026-09-15", "note": "Mining autonomy is a first-class domain: private geofenced ODDs on mine roads are South Africa's most controllable environments and the most practice-ready autonomy market. Site facts are public-record knowledge; automation claims marked for verification." },
+  "thesis": "Mine roads are private, geofenced, low-speed, and fleet-controlled. This is where SA can build real autonomy operations today without any public-road legal change, and where global autonomous haulage technology (Caterpillar MineStar, Komatsu AHS/FrontRunner, Epiroc, Sandvik AutoMine) already operates elsewhere. Skill/technology migration from mining autonomy into road autonomy is a leading indicator to monitor.",
+  "sites": [
+    { "name": "Mogalakwena (Anglo American)", "commodity": "PGM", "province": "Limpopo", "lat": -24.35, "lon": 29.06, "autonomy": "Autonomous haulage deployed (public record; verify scale/status)", "readiness": 85, "readinessSrc": "ESTIMATED", "notes": "SA's flagship large-surface-mine autonomy logic; existing AHS engagement with Komatsu ecosystem." },
+    { "name": "Venetia (Anglo American)", "commodity": "Diamonds", "province": "Limpopo", "lat": -22.46, "lon": 29.31, "autonomy": "Underground transition; automation moderate", "readiness": 55, "readinessSrc": "ESTIMATED", "notes": "Verify surface fleet automation status." },
+    { "name": "Sishen (Kumba Iron Ore)", "commodity": "Iron ore", "province": "Northern Cape", "lat": -27.76, "lon": 22.98, "autonomy": "Autonomous drilling + extensive automation history", "readiness": 80, "readinessSrc": "ESTIMATED", "notes": "Verify haulage automation status; large-scale open-cast." },
+    { "name": "Kolomela (Kumba Iron Ore)", "commodity": "Iron ore", "province": "Northern Cape", "lat": -28.43, "lon": 24.12, "autonomy": "Mechanised open-cast", "readiness": 60, "readinessSrc": "ESTIMATED", "notes": "Assess with OEM partners." },
+    { "name": "Grootegeluk (Exxaro)", "commodity": "Coal", "province": "Limpopo", "lat": -23.70, "lon": 27.71, "autonomy": "Potential open-cast haulage autonomy case", "readiness": 58, "readinessSrc": "ESTIMATED", "notes": "Single largest coal mine by reserve; rail-linked." },
+    { "name": "South Deep (Gold Fields)", "commodity": "Gold", "province": "Gauteng", "lat": -26.40, "lon": 27.67, "autonomy": "Fully mechanised deep mine, digital-technology flagship", "readiness": 62, "readinessSrc": "ESTIMATED", "notes": "Underground automation/mechanisation domain rather than surface haulage." },
+    { "name": "Impala Rustenburg (Impala Platinum)", "commodity": "PGM", "province": "North West", "lat": -25.57, "lon": 27.23, "autonomy": "Conventional underground", "readiness": 40, "readinessSrc": "ESTIMATED", "notes": "Underground mechanisation roadmap to track." },
+    { "name": "Hotazel / Black Rock (South32 / Assmang)", "commodity": "Manganese", "province": "Northern Cape", "lat": -27.22, "lon": 22.93, "autonomy": "Open-cast manganese operators", "readiness": 55, "readinessSrc": "ESTIMATED", "notes": "Manganese export corridor (Hotazel\u2013Port Elizabeth rail/road) is a strategic logistics autonomy case." },
+    { "name": "Cullinan (Petra Diamonds)", "commodity": "Diamonds", "province": "Gauteng", "lat": -25.68, "lon": 28.52, "autonomy": "Underground", "readiness": 35, "readinessSrc": "ESTIMATED", "notes": "Monitor." },
+    { "name": "Sibanye-Stillwater PGM operations", "commodity": "PGM", "province": "North West", "lat": -25.66, "lon": 27.27, "autonomy": "Conventional; digital/safety programmes", "readiness": 42, "readinessSrc": "ESTIMATED", "notes": "Monitor haulage/fleet automation." }
+  ],
+  "capabilityLadder": [
+    { "stage": 1, "name": "Fleet & collision-prevention telematics", "saState": "WIDESPREAD", "note": "Standard across major mines." },
+    { "stage": 2, "name": "Autonomous drilling / blasthole", "saState": "DEPLOYED (e.g. Kumba)", "note": "Happening in SA." },
+    { "stage": 3, "name": "Tele-remote / remote operation centres", "saState": "EMERGING", "note": "Remote ops growing; skills asset." },
+    { "stage": 4, "name": "Autonomous surface haulage", "saState": "DEPLOYED AT SCALE GLOBALLY; SA AT MOGALAKWENA (verify scale)", "note": "Global benchmark; SA trailing Australia/Chile." },
+    { "stage": 5, "name": "Autonomous underground load/haul/dump", "saState": "LIMITED", "note": "Epiroc/Sandvik tech ready; SA adoption low." }
+  ],
+  "metricsToTrack": ["AHS fleet count & sites", "Intervention/km on mine haulage", "Mine ODD complexity (weather, pit geometry)", "Remote-ops centre headcount", "OEM SA integration/partner activity", "Safety improvements attributable to automation"],
+  "globalLeaders": ["Caterpillar MineStar Command", "Komatsu FrontRunner/AHS", "Epiroc", "Sandvik AutoMine", "ASI Robotics", "Scania autonomous mining trucks"]
+}
