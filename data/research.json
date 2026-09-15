@@ -1,5 +1,9 @@
 {
-  "meta": { "domain": "research-ecosystem", "updated": "2026-09-15", "note": "Focused on the SA autonomous-mobility research graph. Institutional capability claims labelled with confidence; verify lab-by-lab before external use." },
+  "meta": {
+    "domain": "research-ecosystem",
+    "updated": "2026-09-15",
+    "note": "Focused on the SA autonomous-mobility research graph. Institutional capability claims labelled with confidence; verify lab-by-lab before external use."
+  },
   "hubs": [
     {
       "id": "ENG-4.0",
@@ -9,9 +13,19 @@
       "focus": "Smart transport, infrastructure intelligence, traffic analysis, vehicle dynamics, semi-/autonomous vehicles.",
       "saSignal": "The single most important SA research ecosystem for mobility autonomy bridging roads + vehicles + AI.",
       "confidence": "HIGH (via client brief; verify scope and current projects)",
-      "lat": -25.754, "lon": 28.232,
+      "lat": -25.754,
+      "lon": 28.232,
       "evidence": [
-        { "claim": "UP, SANRAL and CSIR have built a smart-transport research ecosystem spanning road infrastructure, traffic analysis, vehicle dynamics and semi-/autonomous vehicles.", "source": "Client operational brief; institutional public descriptions", "publisher": "UP / SANRAL / CSIR", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 80, "verified": "2026-09-15" }
+        {
+          "claim": "UP, SANRAL and CSIR have built a smart-transport research ecosystem spanning road infrastructure, traffic analysis, vehicle dynamics and semi-/autonomous vehicles.",
+          "source": "Client operational brief; institutional public descriptions",
+          "publisher": "UP / SANRAL / CSIR",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 80,
+          "verified": "2026-09-15"
+        }
       ]
     },
     {
@@ -22,9 +36,19 @@
       "focus": "Human factors, road infrastructure, traffic engineering, vehicle safety technologies, ADAS and autonomous-driving evaluation.",
       "saSignal": "A functional SA test/evaluation nucleus exists for ADAS/AV (not a public-road licence, but a validation asset).",
       "confidence": "HIGH (via client brief; verify facilities & equipment list)",
-      "lat": -25.759, "lon": 28.263,
+      "lat": -25.759,
+      "lon": 28.263,
       "evidence": [
-        { "claim": "CSIR's Transport Safety Laboratory works across human factors, road infrastructure, traffic engineering and vehicle safety technologies incl. ADAS/AV evaluation.", "source": "Client operational brief", "publisher": "CSIR", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 80, "verified": "2026-09-15" }
+        {
+          "claim": "CSIR's Transport Safety Laboratory works across human factors, road infrastructure, traffic engineering and vehicle safety technologies incl. ADAS/AV evaluation.",
+          "source": "Client operational brief",
+          "publisher": "CSIR",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 80,
+          "verified": "2026-09-15"
+        }
       ]
     },
     {
@@ -34,7 +58,8 @@
       "kind": "Engineering/research university",
       "focus": "Transport engineering, ITS, vehicle dynamics, AI/robotics, engineering 4.0 digital factory lines.",
       "confidence": "MEDIUM-HIGH",
-      "lat": -25.754, "lon": 28.232
+      "lat": -25.754,
+      "lon": 28.232
     },
     {
       "id": "SU",
@@ -43,7 +68,8 @@
       "kind": "Engineering university",
       "focus": "Mechanical/mechatronic engineering, vehicle dynamics, e-mobility and EV powertrain research; verify specific AV projects.",
       "confidence": "MEDIUM",
-      "lat": -33.933, "lon": 18.861
+      "lat": -33.933,
+      "lon": 18.861
     },
     {
       "id": "UCT",
@@ -52,7 +78,8 @@
       "kind": "Research university",
       "focus": "Transport studies, urban mobility, AI & computer vision research; emerging robotics/AI labs.",
       "confidence": "MEDIUM",
-      "lat": -33.958, "lon": 18.460
+      "lat": -33.958,
+      "lon": 18.46
     },
     {
       "id": "WITS",
@@ -61,7 +88,8 @@
       "kind": "Research university",
       "focus": "Wits AI research, robotics lab, engineering; transport/electric mobility research pockets.",
       "confidence": "MEDIUM",
-      "lat": -26.192, "lon": 28.033
+      "lat": -26.192,
+      "lon": 28.033
     },
     {
       "id": "UJ",
@@ -70,7 +98,8 @@
       "kind": "Engineering university",
       "focus": "Mechatronics, automotive and energy research; verify smart-mobility projects.",
       "confidence": "MEDIUM",
-      "lat": -26.183, "lon": 28.003
+      "lat": -26.183,
+      "lon": 28.003
     },
     {
       "id": "UKZN",
@@ -79,7 +108,8 @@
       "kind": "Engineering university",
       "focus": "Transport engineering, logistics, hydrogen research (HySA); port-logistics research nexus.",
       "confidence": "MEDIUM",
-      "lat": -29.867, "lon": 30.981
+      "lat": -29.867,
+      "lon": 30.981
     },
     {
       "id": "NWU",
@@ -88,7 +118,8 @@
       "kind": "Engineering university",
       "focus": "Mechanical/vehicle engineering, hydrogen research; vehicle dynamics strength.",
       "confidence": "MEDIUM",
-      "lat": -26.710, "lon": 27.099
+      "lat": -26.71,
+      "lon": 27.099
     },
     {
       "id": "NMU",
@@ -97,39 +128,168 @@
       "kind": "Engineering university",
       "focus": "Automotive engineering programs; sits in the Eastern Cape automotive belt.",
       "confidence": "MEDIUM",
-      "lat": -34.003, "lon": 25.671
+      "lat": -34.003,
+      "lon": 25.671
     }
   ],
   "testAssets": [
-    { "name": "Gerotek Test Facilities (Armscor)", "city": "Near Pretoria", "kind": "Vehicle dynamics test track", "note": "SA's principal vehicle dynamics testing ground; applicability for AV validation (controlled surfaces, ADAS sensor benchmarking) to be assessed.", "confidence": "HIGH (facility exists); AV-suitability UNVERIFIED" },
-    { "name": "CSIR Transport Safety Laboratory", "city": "Pretoria", "kind": "Safety/ADAS evaluation lab", "note": "Human factors + vehicle safety tech evaluation.", "confidence": "HIGH" },
-    { "name": "Mining operations (private ODD)", "city": "NC / NW / LP", "kind": "Private geofenced ODD", "note": "Mines are the only large private controlled road environment in SA today \u2014 the practical near-term autonomy test beds.", "confidence": "HIGH" },
-    { "name": "AIDC Gauteng / test routes", "city": "Rosslyn", "kind": "Automotive supplier development + possible closed test routes", "note": "Verify facility status.", "confidence": "MEDIUM" },
-    { "name": "NVIDIA Cosmos 3 (world model / synthetic video, OpenUSD)", "city": "Global / importable tooling", "kind": "World model + synthetic data generation for AV training/testing (also GR00T-adjacent robotics data)", "note": "Open foundation world model for generating physically-accurate simulation and data (image/video/audio and robot action). Model sizes (root repo README, authoritative; the cookbook NIM section lists conflicting 8B/32B figures): Cosmos3-Super = 64B (H200/B200/GB200), Cosmos3-Nano = 16B (RTX Pro 6000/H100/B200), Cosmos3-Edge = 4B (Jetson AGX Orin/Thor/RTX Pro 6000). Native AV conditioning: 9D autonomous-vehicle action conditioning; forward dynamics (action-conditioned future frames for AV/DROID/UMI); inverse dynamics (ego-motion trajectory recovered from AV video); Action CoT (trajectory prediction + driving-scene chain-of-causation). Inference backends: Cosmos Framework (native PyTorch, torchrun), Diffusers (Cosmos3OmniPipeline), Transformers >=5.11, TensorRT-LLM (OpenAI-compatible VisualGen server), vLLM/vLLM-Omni (OpenAI-compatible reasoning + omni generation), SGLang, NGC NIM containers (cosmos3 certified 2.0.0, reasoner 1.7.0, generator 1.0.0). Architecture: Mixture-of-Transformers (MoT) + mRoPE; audio generated only together with video (stereo AAC 48 kHz); guardrails via gated nvidia/Cosmos-1.0-Guardrail; license OpenMDW-1.1; gen up to 300 frames at 256p/480p/720p (10/16/24/30 FPS). Finetune recipes (8xH100 SFT incl. Policy-DROID) + DMD2 4-step distill + export (DCP to safetensors to Diffusers). Distinguishes next-token reasoning (Trajectory, Drive2Drive, VideoPhy-2-style reasoners) from world-model generation. Cosmos Framework ships Agent Skills (.agents/skills/, .claude/skills/). AURA angle (user-confirmed): driving-scene reasoner + synthetic SA-edge scenario generator behind the dashboard sim line \u2014 taxi pull-outs, pothole swerves, unmarked intersections in OpenUSD for repeatable tests before tarmac; closes SA 'simulationSoftware' gap (importable, not SA-owned). URLs: github.com/NVIDIA/cosmos (README) + cookbooks/cosmos3 (setup + reasoner + generator + nim).", "confidence": "HIGH (official README + cookbook reviewed 2026-09-15); model sizes CONFLICT between README (16B/64B/4B, authoritative) and cookbook NIM section (8B/32B) \u2014 README adopted; local GPU requirement HIGH-GPU (Nano 16B fp8 single GPU; Super 64B multi-GPU)" }
+    {
+      "name": "Gerotek Test Facilities (Armscor)",
+      "city": "Near Pretoria",
+      "kind": "Vehicle dynamics test track",
+      "note": "SA's principal vehicle dynamics testing ground; applicability for AV validation (controlled surfaces, ADAS sensor benchmarking) to be assessed.",
+      "confidence": "HIGH (facility exists); AV-suitability UNVERIFIED"
+    },
+    {
+      "name": "CSIR Transport Safety Laboratory",
+      "city": "Pretoria",
+      "kind": "Safety/ADAS evaluation lab",
+      "note": "Human factors + vehicle safety tech evaluation.",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "Mining operations (private ODD)",
+      "city": "NC / NW / LP",
+      "kind": "Private geofenced ODD",
+      "note": "Mines are the only large private controlled road environment in SA today — the practical near-term autonomy test beds.",
+      "confidence": "HIGH"
+    },
+    {
+      "name": "AIDC Gauteng / test routes",
+      "city": "Rosslyn",
+      "kind": "Automotive supplier development + possible closed test routes",
+      "note": "Verify facility status.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "name": "NVIDIA Cosmos 3 (world model / synthetic video, OpenUSD)",
+      "city": "Global / importable tooling",
+      "kind": "World model + synthetic data generation for AV training/testing (also GR00T-adjacent robotics data)",
+      "note": "Open foundation world model for generating physically-accurate simulation and data (image/video/audio and robot action). Model sizes (root repo README, authoritative; the cookbook NIM section lists conflicting 8B/32B figures): Cosmos3-Super = 64B (H200/B200/GB200), Cosmos3-Nano = 16B (RTX Pro 6000/H100/B200), Cosmos3-Edge = 4B (Jetson AGX Orin/Thor/RTX Pro 6000). Native AV conditioning: 9D autonomous-vehicle action conditioning; forward dynamics (action-conditioned future frames for AV/DROID/UMI); inverse dynamics (ego-motion trajectory recovered from AV video); Action CoT (trajectory prediction + driving-scene chain-of-causation). Inference backends: Cosmos Framework (native PyTorch, torchrun), Diffusers (Cosmos3OmniPipeline), Transformers >=5.11, TensorRT-LLM (OpenAI-compatible VisualGen server), vLLM/vLLM-Omni (OpenAI-compatible reasoning + omni generation), SGLang, NGC NIM containers (cosmos3 certified 2.0.0, reasoner 1.7.0, generator 1.0.0). Architecture: Mixture-of-Transformers (MoT) + mRoPE; audio generated only together with video (stereo AAC 48 kHz); guardrails via gated nvidia/Cosmos-1.0-Guardrail; license OpenMDW-1.1; gen up to 300 frames at 256p/480p/720p (10/16/24/30 FPS). Finetune recipes (8xH100 SFT incl. Policy-DROID) + DMD2 4-step distill + export (DCP to safetensors to Diffusers). Distinguishes next-token reasoning (Trajectory, Drive2Drive, VideoPhy-2-style reasoners) from world-model generation. Cosmos Framework ships Agent Skills (.agents/skills/, .claude/skills/). AURA angle (user-confirmed): driving-scene reasoner + synthetic SA-edge scenario generator behind the dashboard sim line — taxi pull-outs, pothole swerves, unmarked intersections in OpenUSD for repeatable tests before tarmac; closes SA 'simulationSoftware' gap (importable, not SA-owned). URLs: github.com/NVIDIA/cosmos (README) + cookbooks/cosmos3 (setup + reasoner + generator + nim).",
+      "confidence": "HIGH (official README + cookbook reviewed 2026-09-15); model sizes CONFLICT between README (16B/64B/4B, authoritative) and cookbook NIM section (8B/32B) — README adopted; local GPU requirement HIGH-GPU (Nano 16B fp8 single GPU; Super 64B multi-GPU)"
+    }
   ],
   "capabilityMatrix": {
-    "perceptionResearch": ["UP (AI/vision)", "UCT (CV/AI)", "Wits (AI/robotics)", "Stellenbosch (mechatronics)"],
-    "vehicleDynamics": ["UP", "Stellenbosch", "NWU", "CSIR"],
-    "transportTrafficEngineering": ["UP (Engineering 4.0)", "CSIR", "UCT (Transport Studies)"],
-    "portLogistics": ["UKZN", "Grindrod/DP World industry", "Transnet"],
-    "miningTechResearch": ["Industry-led (Anglo/Kumba) + UP Wits mining engineering", "verify"],
-    "safetyAndHumanFactors": ["CSIR Transport Safety Lab", "UNISA/psychology (verify)"],
-    "simulationSoftware": ["No SA-OWNED national-scale autonomy simulation platform \u2014 GAP. International synthetic stack IS importable: NVIDIA Cosmos 3 (OpenUSD; two roles \u2014 driving-scene next-token REASONER + audiovisual/action GEN, native 9D AV conditioning + forward/inverse dynamics + Action CoT; backends Cosmos Framework / Diffusers / TRT-LLM / vLLM-Omni / SGLang / NIM) \u2014 see testAssets.", "CARLA/SUMO-style scenario tooling can be layered on Cosmos3 output"]
+    "perceptionResearch": [
+      "UP (AI/vision)",
+      "UCT (CV/AI)",
+      "Wits (AI/robotics)",
+      "Stellenbosch (mechatronics)"
+    ],
+    "vehicleDynamics": [
+      "UP",
+      "Stellenbosch",
+      "NWU",
+      "CSIR"
+    ],
+    "transportTrafficEngineering": [
+      "UP (Engineering 4.0)",
+      "CSIR",
+      "UCT (Transport Studies)"
+    ],
+    "portLogistics": [
+      "UKZN",
+      "Grindrod/DP World industry",
+      "Transnet"
+    ],
+    "miningTechResearch": [
+      "Industry-led (Anglo/Kumba) + UP Wits mining engineering",
+      "verify"
+    ],
+    "safetyAndHumanFactors": [
+      "CSIR Transport Safety Lab",
+      "UNISA/psychology (verify)"
+    ],
+    "simulationSoftware": [
+      "No SA-OWNED national-scale autonomy simulation platform — GAP. International synthetic stack IS importable: NVIDIA Cosmos 3 (OpenUSD; two roles — driving-scene next-token REASONER + audiovisual/action GEN, native 9D AV conditioning + forward/inverse dynamics + Action CoT; backends Cosmos Framework / Diffusers / TRT-LLM / vLLM-Omni / SGLang / NIM) — see testAssets.",
+      "CARLA/SUMO-style scenario tooling can be layered on Cosmos3 output"
+    ]
   },
   "researchGraph": [
-    { "from": "University of Pretoria", "rel": "hosts/researches", "to": "Engineering 4.0 smart-transport ecosystem", "kind": "research-hub" },
-    { "from": "SANRAL", "rel": "co-funds + provides road data", "to": "Engineering 4.0", "kind": "partnership" },
-    { "from": "CSIR", "rel": "co-contributes labs/data", "to": "Engineering 4.0", "kind": "partnership" },
-    { "from": "CSIR", "rel": "operates", "to": "Transport Safety Laboratory", "kind": "facility" },
-    { "from": "Mines (Anglo/Kumba)", "rel": "provide private ODD + capital", "to": "Mining autonomy deployment", "kind": "deployment" },
-    { "from": "OEMs (SA)", "rel": "produce export vehicles with ADAS", "to": "SA vehicle fleet", "kind": "asset" },
-    { "from": "Mix/Ctrack", "rel": "produce", "to": "National telematics/fleet data", "kind": "data-asset" },
-    { "from": "RTMC", "rel": "custodian of", "to": "National crash database", "kind": "data-asset" },
-    { "from": "DoT", "rel": "regulates", "to": "Public-road AV operation", "kind": "regulation" },
-    { "from": "NVIDIA Cosmos 3", "rel": "provides synthetic world-model generation over OpenUSD", "to": "Repeatable SA-edge scenario tests (taxi pull-outs, pothole swerves)", "kind": "international-tool" },
-    { "from": "NVIDIA Cosmos 3", "rel": "feeds image/video/audio + action data into", "to": "AV/robotics training & validation (with guardrails)", "kind": "international-tool" },
-    { "from": "NVIDIA Cosmos 3 (AV-native)", "rel": "reasoner runs driving-scene chain-of-causation (Action CoT) behind", "to": "Dashboard simulation line", "kind": "international-tool" },
-    { "from": "NVIDIA Cosmos 3 (AV-native)", "rel": "generator synthesizes 9D-action-conditioned SA-edge video feed to", "to": "Dashboard simulation line", "kind": "international-tool" }
+    {
+      "from": "University of Pretoria",
+      "rel": "hosts/researches",
+      "to": "Engineering 4.0 smart-transport ecosystem",
+      "kind": "research-hub"
+    },
+    {
+      "from": "SANRAL",
+      "rel": "co-funds + provides road data",
+      "to": "Engineering 4.0",
+      "kind": "partnership"
+    },
+    {
+      "from": "CSIR",
+      "rel": "co-contributes labs/data",
+      "to": "Engineering 4.0",
+      "kind": "partnership"
+    },
+    {
+      "from": "CSIR",
+      "rel": "operates",
+      "to": "Transport Safety Laboratory",
+      "kind": "facility"
+    },
+    {
+      "from": "Mines (Anglo/Kumba)",
+      "rel": "provide private ODD + capital",
+      "to": "Mining autonomy deployment",
+      "kind": "deployment"
+    },
+    {
+      "from": "OEMs (SA)",
+      "rel": "produce export vehicles with ADAS",
+      "to": "SA vehicle fleet",
+      "kind": "asset"
+    },
+    {
+      "from": "Mix/Ctrack",
+      "rel": "produce",
+      "to": "National telematics/fleet data",
+      "kind": "data-asset"
+    },
+    {
+      "from": "RTMC",
+      "rel": "custodian of",
+      "to": "National crash database",
+      "kind": "data-asset"
+    },
+    {
+      "from": "DoT",
+      "rel": "regulates",
+      "to": "Public-road AV operation",
+      "kind": "regulation"
+    },
+    {
+      "from": "NVIDIA Cosmos 3",
+      "rel": "provides synthetic world-model generation over OpenUSD",
+      "to": "Repeatable SA-edge scenario tests (taxi pull-outs, pothole swerves)",
+      "kind": "international-tool"
+    },
+    {
+      "from": "NVIDIA Cosmos 3",
+      "rel": "feeds image/video/audio + action data into",
+      "to": "AV/robotics training & validation (with guardrails)",
+      "kind": "international-tool"
+    },
+    {
+      "from": "NVIDIA Cosmos 3 (AV-native)",
+      "rel": "reasoner runs driving-scene chain-of-causation (Action CoT) behind",
+      "to": "Dashboard simulation line",
+      "kind": "international-tool"
+    },
+    {
+      "from": "NVIDIA Cosmos 3 (AV-native)",
+      "rel": "generator synthesizes 9D-action-conditioned SA-edge video feed to",
+      "to": "Dashboard simulation line",
+      "kind": "international-tool"
+    },
+    {
+      "from": "SCHOOL (Pty) Ltd",
+      "rel": "runs ~3×10⁷× above the Landauer thermodynamic floor (Landauer = k_BT·ln2 ≈ 2.87×10⁻²¹ J/bit @300K); Educational AI Value Equation governs token routing",
+      "to": "Token Economics and AI Compute Costs (canonical paper — online at /token-economics)",
+      "kind": "landauer-economics"
+    }
   ],
   "gaps": [
     "No national-scale autonomy simulation capability known (CARLA/SUMO clusters, scenario ecosystems)",
