@@ -6,7 +6,20 @@ export function renderResearch(view) {
   const R = DB.research || {};
 
   view.innerHTML = `
-  <h3 class="sec">Mobility research hubs</h3>
+  
+  <div class="panel" style="margin-bottom: 30px; border: 1px solid var(--color-gold);">
+    <div class="panel-hd" style="background: var(--color-gold); color: var(--color-onyx); font-weight: bold;">
+      <span class="t">Strategic Intelligence Assets</span>
+    </div>
+    <div class="panel-bd" style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <div style="flex: 1;">
+        <strong style="font-size: 1.2rem; color: var(--color-gold);">Token Economics & AI Compute Costs</strong><br/>
+        <span class="small dim">A comprehensive whitepaper on the thermodynamic floor, Landauer limits, and AI infrastructure economics.</span>
+      </div>
+      <a href="/token-economics" target="_blank" class="sovereign-btn btn-gold" style="padding: 8px 16px; font-size: 0.9rem; background: #e8c15a; color: #0a0a0a; text-decoration: none; border-radius: 4px; font-weight: bold;">Read Full Paper</a>
+    </div>
+  </div>
+<h3 class="sec">Mobility research hubs</h3>
   <div class="row r3">
     ${(R.hubs || []).map((h) => `
       <div class="thing"><div class="tt">${esc(h.name)}</div>
