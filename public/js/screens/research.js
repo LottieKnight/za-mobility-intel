@@ -16,7 +16,7 @@ export function renderResearch(view) {
         <strong style="font-size: 1.2rem; color: var(--color-gold);">Token Economics & AI Compute Costs</strong><br/>
         <span class="small dim">A comprehensive whitepaper on the thermodynamic floor, Landauer limits, and AI infrastructure economics.</span>
       </div>
-      <a href="/token-economics" target="_blank" class="sovereign-btn btn-gold" style="padding: 8px 16px; font-size: 0.9rem; background: #e8c15a; color: #0a0a0a; text-decoration: none; border-radius: 4px; font-weight: bold;">Read Full Paper</a>
+      <a href="#/token-economics" class="sovereign-btn btn-gold" style="padding: 8px 16px; font-size: 0.9rem; background: #e8c15a; color: #0a0a0a; text-decoration: none; border-radius: 4px; font-weight: bold;">Read Full Paper</a>
     </div>
   </div>
 <h3 class="sec">Mobility research hubs</h3>
