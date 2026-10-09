@@ -1,3 +1,4 @@
+import { renderTokenEconomics } from './screens/token-economics.js';
 // app.js — bootstrap, router, shell, global search
 import { loadAll, buildIndex, DB } from './data.js';
 import { samri } from './scoring.js';
@@ -17,6 +18,8 @@ import { renderKnowledge } from './screens/knowledge.js';
 import { renderWorld } from './screens/world.js';
 
 export const SCREENS = {
+  token_economics: { id: "token-economics", title: "Token Economics", crumb: "whitepaper / compute costs", render: renderTokenEconomics },
+
   command: { id: 'command', title: 'Command Centre', crumb: 'national overview', render: renderCommand },
   map: { id: 'map', title: 'Geospatial Intelligence', crumb: 'map / layers / entities', render: renderMap },
   corridors: { id: 'corridors', title: 'Corridors & Roads', crumb: 'autonomy readiness / digital road twin', render: renderCorridors },
