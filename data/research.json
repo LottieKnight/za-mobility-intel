@@ -151,7 +151,7 @@
       "name": "Mining operations (private ODD)",
       "city": "NC / NW / LP",
       "kind": "Private geofenced ODD",
-      "note": "Mines are the only large private controlled road environment in SA today — the practical near-term autonomy test beds.",
+      "note": "Mines are the only large private controlled road environment in SA today \u2014 the practical near-term autonomy test beds.",
       "confidence": "HIGH"
     },
     {
@@ -165,8 +165,8 @@
       "name": "NVIDIA Cosmos 3 (world model / synthetic video, OpenUSD)",
       "city": "Global / importable tooling",
       "kind": "World model + synthetic data generation for AV training/testing (also GR00T-adjacent robotics data)",
-      "note": "Open foundation world model for generating physically-accurate simulation and data (image/video/audio and robot action). Model sizes (root repo README, authoritative; the cookbook NIM section lists conflicting 8B/32B figures): Cosmos3-Super = 64B (H200/B200/GB200), Cosmos3-Nano = 16B (RTX Pro 6000/H100/B200), Cosmos3-Edge = 4B (Jetson AGX Orin/Thor/RTX Pro 6000). Native AV conditioning: 9D autonomous-vehicle action conditioning; forward dynamics (action-conditioned future frames for AV/DROID/UMI); inverse dynamics (ego-motion trajectory recovered from AV video); Action CoT (trajectory prediction + driving-scene chain-of-causation). Inference backends: Cosmos Framework (native PyTorch, torchrun), Diffusers (Cosmos3OmniPipeline), Transformers >=5.11, TensorRT-LLM (OpenAI-compatible VisualGen server), vLLM/vLLM-Omni (OpenAI-compatible reasoning + omni generation), SGLang, NGC NIM containers (cosmos3 certified 2.0.0, reasoner 1.7.0, generator 1.0.0). Architecture: Mixture-of-Transformers (MoT) + mRoPE; audio generated only together with video (stereo AAC 48 kHz); guardrails via gated nvidia/Cosmos-1.0-Guardrail; license OpenMDW-1.1; gen up to 300 frames at 256p/480p/720p (10/16/24/30 FPS). Finetune recipes (8xH100 SFT incl. Policy-DROID) + DMD2 4-step distill + export (DCP to safetensors to Diffusers). Distinguishes next-token reasoning (Trajectory, Drive2Drive, VideoPhy-2-style reasoners) from world-model generation. Cosmos Framework ships Agent Skills (.agents/skills/, .claude/skills/). AURA angle (user-confirmed): driving-scene reasoner + synthetic SA-edge scenario generator behind the dashboard sim line — taxi pull-outs, pothole swerves, unmarked intersections in OpenUSD for repeatable tests before tarmac; closes SA 'simulationSoftware' gap (importable, not SA-owned). URLs: github.com/NVIDIA/cosmos (README) + cookbooks/cosmos3 (setup + reasoner + generator + nim).",
-      "confidence": "HIGH (official README + cookbook reviewed 2026-09-15); model sizes CONFLICT between README (16B/64B/4B, authoritative) and cookbook NIM section (8B/32B) — README adopted; local GPU requirement HIGH-GPU (Nano 16B fp8 single GPU; Super 64B multi-GPU)"
+      "note": "Open foundation world model for generating physically-accurate simulation and data (image/video/audio and robot action). Model sizes (root repo README, authoritative; the cookbook NIM section lists conflicting 8B/32B figures): Cosmos3-Super = 64B (H200/B200/GB200), Cosmos3-Nano = 16B (RTX Pro 6000/H100/B200), Cosmos3-Edge = 4B (Jetson AGX Orin/Thor/RTX Pro 6000). Native AV conditioning: 9D autonomous-vehicle action conditioning; forward dynamics (action-conditioned future frames for AV/DROID/UMI); inverse dynamics (ego-motion trajectory recovered from AV video); Action CoT (trajectory prediction + driving-scene chain-of-causation). Inference backends: Cosmos Framework (native PyTorch, torchrun), Diffusers (Cosmos3OmniPipeline), Transformers >=5.11, TensorRT-LLM (OpenAI-compatible VisualGen server), vLLM/vLLM-Omni (OpenAI-compatible reasoning + omni generation), SGLang, NGC NIM containers (cosmos3 certified 2.0.0, reasoner 1.7.0, generator 1.0.0). Architecture: Mixture-of-Transformers (MoT) + mRoPE; audio generated only together with video (stereo AAC 48 kHz); guardrails via gated nvidia/Cosmos-1.0-Guardrail; license OpenMDW-1.1; gen up to 300 frames at 256p/480p/720p (10/16/24/30 FPS). Finetune recipes (8xH100 SFT incl. Policy-DROID) + DMD2 4-step distill + export (DCP to safetensors to Diffusers). Distinguishes next-token reasoning (Trajectory, Drive2Drive, VideoPhy-2-style reasoners) from world-model generation. Cosmos Framework ships Agent Skills (.agents/skills/, .claude/skills/). AURA angle (user-confirmed): driving-scene reasoner + synthetic SA-edge scenario generator behind the dashboard sim line \u2014 taxi pull-outs, pothole swerves, unmarked intersections in OpenUSD for repeatable tests before tarmac; closes SA 'simulationSoftware' gap (importable, not SA-owned). URLs: github.com/NVIDIA/cosmos (README) + cookbooks/cosmos3 (setup + reasoner + generator + nim). Strategic alignment: Use BMW iX (TASEZ) as a primary target for high-fidelity neural reconstruction and synthetic scenario validation in the SA context.",
+      "confidence": "HIGH (official README + cookbook reviewed 2026-09-15); model sizes CONFLICT between README (16B/64B/4B, authoritative) and cookbook NIM section (8B/32B) \u2014 README adopted; local GPU requirement HIGH-GPU (Nano 16B fp8 single GPU; Super 64B multi-GPU)"
     }
   ],
   "capabilityMatrix": {
@@ -201,7 +201,7 @@
       "UNISA/psychology (verify)"
     ],
     "simulationSoftware": [
-      "No SA-OWNED national-scale autonomy simulation platform — GAP. International synthetic stack IS importable: NVIDIA Cosmos 3 (OpenUSD; two roles — driving-scene next-token REASONER + audiovisual/action GEN, native 9D AV conditioning + forward/inverse dynamics + Action CoT; backends Cosmos Framework / Diffusers / TRT-LLM / vLLM-Omni / SGLang / NIM) — see testAssets.",
+      "No SA-OWNED national-scale autonomy simulation platform \u2014 GAP. International synthetic stack IS importable: NVIDIA Cosmos 3 (OpenUSD; two roles \u2014 driving-scene next-token REASONER + audiovisual/action GEN, native 9D AV conditioning + forward/inverse dynamics + Action CoT; backends Cosmos Framework / Diffusers / TRT-LLM / vLLM-Omni / SGLang / NIM) \u2014 see testAssets.",
       "CARLA/SUMO-style scenario tooling can be layered on Cosmos3 output"
     ]
   },
@@ -286,9 +286,15 @@
     },
     {
       "from": "SCHOOL (Pty) Ltd",
-      "rel": "runs ~3×10⁷× above the Landauer thermodynamic floor (Landauer = k_BT·ln2 ≈ 2.87×10⁻²¹ J/bit @300K); Educational AI Value Equation governs token routing",
-      "to": "Token Economics and AI Compute Costs (canonical paper — online at /token-economics)",
+      "rel": "runs ~3\u00d710\u2077\u00d7 above the Landauer thermodynamic floor (Landauer = k_BT\u00b7ln2 \u2248 2.87\u00d710\u207b\u00b2\u00b9 J/bit @300K); Educational AI Value Equation governs token routing",
+      "to": "Token Economics and AI Compute Costs (canonical paper \u2014 online at /token-economics)",
       "kind": "landauer-economics"
+    },
+    {
+      "from": "BMW iX (via TASEZ)",
+      "rel": "target for",
+      "to": "Neural Reconstruction / NVIDIA Cosmos 3 synthetic validation",
+      "kind": "opportunity"
     }
   ],
   "gaps": [

@@ -1,71 +1,480 @@
 {
-  "meta": { "domain": "industry", "updated": "2026-09-15", "note": "Company facts are public-record knowledge as at the tracker date; each entry should be re-verified before external use. Company-site locations are well-known public facts (plants, ports, operations)." },
+  "meta": {
+    "domain": "industry",
+    "updated": "2026-09-15",
+    "note": "Company facts are public-record knowledge as at the tracker date; each entry should be re-verified before external use. Company-site locations are well-known public facts (plants, ports, operations)."
+  },
   "findings": [
-    { "finding": "No South African company is publicly known to be building a full autonomous-driving stack (perception-to-control) for public roads.", "kind": "GAP-STRATEGIC", "confidence": "ESTIMATED" },
-    { "finding": "South Africa has a deep, globally-scaled telematics/fleet-software industry (e.g. Mix Telematics, Ctrack) \u2014 a natural base for fleet intelligence and safety analytics.", "kind": "ASSET", "confidence": "HIGH" },
-    { "finding": "South Africa has global-scale heavy commercial vehicle manufacturing (Ford Ranger, VW Polo, Toyota Hilux lines) but no domestic autonomy-component supply chain yet.", "kind": "ASSET + GAP", "confidence": "HIGH" },
-    { "finding": "Mining autonomy suppliers (Caterpillar, Komatsu, Epiroc, Sandvik, ASI) have active SA channels via mining houses; SA is a leading market for PGM/coal/iron automation readiness.", "kind": "ASSET", "confidence": "MEDIUM" }
+    {
+      "finding": "No South African company is publicly known to be building a full autonomous-driving stack (perception-to-control) for public roads.",
+      "kind": "GAP-STRATEGIC",
+      "confidence": "ESTIMATED"
+    },
+    {
+      "finding": "South Africa has a deep, globally-scaled telematics/fleet-software industry (e.g. Mix Telematics, Ctrack) \u2014 a natural base for fleet intelligence and safety analytics.",
+      "kind": "ASSET",
+      "confidence": "HIGH"
+    },
+    {
+      "finding": "South Africa has global-scale heavy commercial vehicle manufacturing (Ford Ranger, VW Polo, Toyota Hilux lines) but no domestic autonomy-component supply chain yet.",
+      "kind": "ASSET + GAP",
+      "confidence": "HIGH"
+    },
+    {
+      "finding": "Mining autonomy suppliers (Caterpillar, Komatsu, Epiroc, Sandvik, ASI) have active SA channels via mining houses; SA is a leading market for PGM/coal/iron automation readiness.",
+      "kind": "ASSET",
+      "confidence": "MEDIUM"
+    }
   ],
   "oem": [
-    { "id": "TOYOTA-SA", "name": "Toyota South Africa Motors", "city": "Prospecton, Durban", "plants": ["Prospecton (Hilux, Corolla Cross hybrid)"], "autonomyNote": "ADAS fitment on premium lines; no local autonomy R&D publicly known.", "evNote": "Corolla Cross HEV localised; NEV localisation developing.", "evidence": [ { "claim": "Toyota SA manufactures the Hilux and Corolla Cross in Durban.", "source": "TSAM public plant records", "publisher": "Toyota SA", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" } ] },
-    { "id": "VWSA", "name": "Volkswagen Group South Africa", "city": "Kariega (Uitenhage), Gqeberha", "plants": ["Kariega (Polo export)"], "autonomyNote": "ADAS on local models; no autonomy R&D publicly known.", "evNote": "Polo not EV; group EV ambitions via imports.", "evidence": [ { "claim": "VWSA builds the Polo in Kariega for export.", "source": "VWSA public records", "publisher": "VWSA", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" } ] },
-    { "id": "FORD-SA", "name": "Ford South Africa", "city": "Silverton, Pretoria (assemble) + Struandale, Gqeberha (engine)", "plants": ["Silverton (Ranger)", "Struandale (engines)"], "autonomyNote": "ADAS (incl. lane-keeping/proactive features) on Ranger/Stormtrak; no local autonomy R&D.", "evNote": "Ranger PHEV announced for SA market (verify).", "evidence": [ { "claim": "Ford assembles the Ranger in Silverton with engine production in Struandale.", "source": "Ford SA public records", "publisher": "Ford SA", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" } ] },
-    { "id": "BMW-SA", "name": "BMW Group South Africa", "city": "Rosslyn, Pretoria", "plants": ["Rosslyn (X3)"], "autonomyNote": "Global group: L3 Personal Pilot (DRIVE Pilot) in Germany; SA-specific status: verify.", "evNote": "BMW i products imported; charging network operated.", "evidence": [ { "claim": "BMW builds the X3 in Rosslyn, Pretoria.", "source": "BMW SA public records", "publisher": "BMW SA", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" } ] },
-    { "id": "MBSA", "name": "Mercedes-Benz South Africa", "city": "East London", "plants": ["East London (C-Class)"], "autonomyNote": "DRIVE Pilot L3 in Germany/global markets; SA fitment/legal status: verify.", "evNote": "EQ imports; charging ecosystem.", "evidence": [ { "claim": "MBSA builds the C-Class in East London.", "source": "MBSA public records", "publisher": "MBSA", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" } ] },
-    { "id": "ISUZU-SA", "name": "Isuzu Motors South Africa", "city": "Struandale, Gqeberha", "plants": ["Struandale (D-Max)"], "autonomyNote": "IMSAF (Isuzu Motors SA Foundation) logistics/transport initiatives; no autonomy R&D known.", "evNote": "D-Max diesel focus; NEV plans at group level.", "evidence": [ { "claim": "Isuzu builds the D-Max in Struandale.", "source": "IMSA public records", "publisher": "Isuzu Motors SA", "date": "CF", "url": null, "type": "PRIMARY", "confidence": 92, "verified": "2026-09-15" } ] },
-    { "id": "NISSAN-SA", "name": "Nissan South Africa", "city": "Rosslyn plant wound down", "plants": ["Rosslyn assembly ceased (announced; verify final status)"], "autonomyNote": "Nissan ProPILOT globally; SA operation status: verify.", "evNote": "Leaf imported historically; verify current.", "evidence": [ { "claim": "Nissan announced the winding down of Rosslyn assembly; verify current status.", "source": "Nissan SA statements / industry press", "publisher": "Nissan SA / press", "date": "2024", "url": null, "type": "SECONDARY", "confidence": 70, "verified": "2026-09-15" } ] }
+    {
+      "id": "TOYOTA-SA",
+      "name": "Toyota South Africa Motors",
+      "city": "Prospecton, Durban",
+      "plants": [
+        "Prospecton (Hilux, Corolla Cross hybrid)"
+      ],
+      "autonomyNote": "ADAS fitment on premium lines; no local autonomy R&D publicly known.",
+      "evNote": "Corolla Cross HEV localised; NEV localisation developing.",
+      "evidence": [
+        {
+          "claim": "Toyota SA manufactures the Hilux and Corolla Cross in Durban.",
+          "source": "TSAM public plant records",
+          "publisher": "Toyota SA",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 92,
+          "verified": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "VWSA",
+      "name": "Volkswagen Group South Africa",
+      "city": "Kariega (Uitenhage), Gqeberha",
+      "plants": [
+        "Kariega (Polo export)"
+      ],
+      "autonomyNote": "ADAS on local models; no autonomy R&D publicly known.",
+      "evNote": "Polo not EV; group EV ambitions via imports.",
+      "evidence": [
+        {
+          "claim": "VWSA builds the Polo in Kariega for export.",
+          "source": "VWSA public records",
+          "publisher": "VWSA",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 92,
+          "verified": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "FORD-SA",
+      "name": "Ford South Africa",
+      "city": "Silverton, Pretoria (assemble) + Struandale, Gqeberha (engine)",
+      "plants": [
+        "Silverton (Ranger)",
+        "Struandale (engines)"
+      ],
+      "autonomyNote": "ADAS (incl. lane-keeping/proactive features) on Ranger/Stormtrak; no local autonomy R&D.",
+      "evNote": "Ranger PHEV announced for SA market (verify).",
+      "evidence": [
+        {
+          "claim": "Ford assembles the Ranger in Silverton with engine production in Struandale.",
+          "source": "Ford SA public records",
+          "publisher": "Ford SA",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 92,
+          "verified": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "BMW-SA",
+      "name": "BMW Group South Africa",
+      "city": "Rosslyn, Pretoria",
+      "plants": [
+        "Rosslyn (X3)"
+      ],
+      "autonomyNote": "Global group: L3 Personal Pilot (DRIVE Pilot) in Germany; SA-specific status: verify. Strong emphasis on BMW iX via Tshwane Automotive SEZ (TASEZ) initiatives.",
+      "evNote": "BMW i products imported; charging network operated.",
+      "evidence": [
+        {
+          "claim": "BMW builds the X3 in Rosslyn, Pretoria.",
+          "source": "BMW SA public records",
+          "publisher": "BMW SA",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 92,
+          "verified": "2026-09-15"
+        },
+        {
+          "claim": "BMW iX highlighted as a strategic focus at Tshwane Automotive Special Economic Zone (TASEZ) information event.",
+          "source": "TASEZ Information Event",
+          "publisher": "TASEZ / BMW SA",
+          "date": "2026-10",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 95,
+          "verified": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "MBSA",
+      "name": "Mercedes-Benz South Africa",
+      "city": "East London",
+      "plants": [
+        "East London (C-Class)"
+      ],
+      "autonomyNote": "DRIVE Pilot L3 in Germany/global markets; SA fitment/legal status: verify.",
+      "evNote": "EQ imports; charging ecosystem.",
+      "evidence": [
+        {
+          "claim": "MBSA builds the C-Class in East London.",
+          "source": "MBSA public records",
+          "publisher": "MBSA",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 92,
+          "verified": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "ISUZU-SA",
+      "name": "Isuzu Motors South Africa",
+      "city": "Struandale, Gqeberha",
+      "plants": [
+        "Struandale (D-Max)"
+      ],
+      "autonomyNote": "IMSAF (Isuzu Motors SA Foundation) logistics/transport initiatives; no autonomy R&D known.",
+      "evNote": "D-Max diesel focus; NEV plans at group level.",
+      "evidence": [
+        {
+          "claim": "Isuzu builds the D-Max in Struandale.",
+          "source": "IMSA public records",
+          "publisher": "Isuzu Motors SA",
+          "date": "CF",
+          "url": null,
+          "type": "PRIMARY",
+          "confidence": 92,
+          "verified": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "id": "NISSAN-SA",
+      "name": "Nissan South Africa",
+      "city": "Rosslyn plant wound down",
+      "plants": [
+        "Rosslyn assembly ceased (announced; verify final status)"
+      ],
+      "autonomyNote": "Nissan ProPILOT globally; SA operation status: verify.",
+      "evNote": "Leaf imported historically; verify current.",
+      "evidence": [
+        {
+          "claim": "Nissan announced the winding down of Rosslyn assembly; verify current status.",
+          "source": "Nissan SA statements / industry press",
+          "publisher": "Nissan SA / press",
+          "date": "2024",
+          "url": null,
+          "type": "SECONDARY",
+          "confidence": 70,
+          "verified": "2026-09-15"
+        }
+      ]
+    }
   ],
   "telematics": [
-    { "id": "MIX", "name": "Mix Telematics", "category": "Fleet telematics & safety (SA-founded, NYSE-listed)", "note": "Global fleet intelligence platform \u2014 natural building block for SA fleet-safety analytics and AV-readiness products.", "confidence": "HIGH" },
-    { "id": "CTRACK", "name": "Ctrack", "category": "Vehicle tracking / telematics (SA-founded)", "note": "Nationwide tracking and fleet data; telematics asset for behaviour measurement.", "confidence": "HIGH" }
+    {
+      "id": "MIX",
+      "name": "Mix Telematics",
+      "category": "Fleet telematics & safety (SA-founded, NYSE-listed)",
+      "note": "Global fleet intelligence platform \u2014 natural building block for SA fleet-safety analytics and AV-readiness products.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "CTRACK",
+      "name": "Ctrack",
+      "category": "Vehicle tracking / telematics (SA-founded)",
+      "note": "Nationwide tracking and fleet data; telematics asset for behaviour measurement.",
+      "confidence": "HIGH"
+    }
   ],
   "miningCos": [
-    { "id": "AA", "name": "Anglo American", "sites": ["Mogalakwena (PGM, Limpopo)", "Venetia (diamonds, Limpopo)"], "autonomyNote": "Publicly stated autonomous haulage deployment at Mogalakwena (Komatsu AHS ecosystem); the flagship SA autonomy-logic site. Verify current fleet scale.", "confidence": "MEDIUM-HIGH" },
-    { "id": "KUMBA", "name": "Kumba Iron Ore (Anglo American)", "sites": ["Sishen (NC)", "Kolomela (NC)"], "autonomyNote": "Sishen long-run automation incl. autonomous drilling; haulage automation status: verify. Biggest open-cast iron-ore operations in country.", "confidence": "MEDIUM" },
-    { "id": "IMPALA", "name": "Impala Platinum", "sites": ["Rustenburg (NW)", "Marula (Limpopo)", "Two Rivers (Mpumalanga)"], "autonomyNote": "Conventional mine production; automation focus on underground mechanisation \u2014 verify any autonomy pilots.", "confidence": "MEDIUM" },
-    { "id": "SIBANYE", "name": "Sibanye-Stillwater", "sites": ["Rustenburg/Kroondal PGM (NW)", "Gold operations (Driefontein, Kloof)"], "autonomyNote": "Digital/safety focus; autonomous surface haulage not widely reported \u2014 monitor.", "confidence": "MEDIUM" },
-    { "id": "GOLDFIELDS", "name": "Gold Fields", "sites": ["South Deep (Gauteng)"], "autonomyNote": "South Deep is a fully mechanised deep gold mine and a digital-technology flagship; autonomous/remote mining engineering relevant.", "confidence": "MEDIUM" },
-    { "id": "HARMONY", "name": "Harmony Gold", "sites": ["Multiple deep-level gold mines (FS/KZN/GP)"], "autonomyNote": "Mechanisation focus; monitor autonomy adoption.", "confidence": "MEDIUM" },
-    { "id": "EXXARO", "name": "Exxaro Resources", "sites": ["Grootegeluk (Limpopo, coal)"], "autonomyNote": "Large open-cast coal operation; assess autonomous haulage readiness with OEM partners.", "confidence": "MEDIUM" },
-    { "id": "SOUTH32", "name": "South32", "sites": ["Hotazel manganese (NC)", "Hillside Aluminium (Richards Bay)"], "autonomyNote": "Global group pursuing automation; verify SA-site specifics.", "confidence": "MEDIUM" },
-    { "id": "ASSMANG", "name": "Assmang (Assore)", "sites": ["Black Rock manganese (NC)", "Khumani iron ore (NC)"], "autonomyNote": "NC resource operations; automation status: verify.", "confidence": "MEDIUM" },
-    { "id": "PETRA", "name": "Petra Diamonds", "sites": ["Cullinan (Gauteng)", "Finsch (NC)"], "autonomyNote": "Underground diamond mining; automation limited \u2014 monitor.", "confidence": "MEDIUM" }
+    {
+      "id": "AA",
+      "name": "Anglo American",
+      "sites": [
+        "Mogalakwena (PGM, Limpopo)",
+        "Venetia (diamonds, Limpopo)"
+      ],
+      "autonomyNote": "Publicly stated autonomous haulage deployment at Mogalakwena (Komatsu AHS ecosystem); the flagship SA autonomy-logic site. Verify current fleet scale.",
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "id": "KUMBA",
+      "name": "Kumba Iron Ore (Anglo American)",
+      "sites": [
+        "Sishen (NC)",
+        "Kolomela (NC)"
+      ],
+      "autonomyNote": "Sishen long-run automation incl. autonomous drilling; haulage automation status: verify. Biggest open-cast iron-ore operations in country.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "IMPALA",
+      "name": "Impala Platinum",
+      "sites": [
+        "Rustenburg (NW)",
+        "Marula (Limpopo)",
+        "Two Rivers (Mpumalanga)"
+      ],
+      "autonomyNote": "Conventional mine production; automation focus on underground mechanisation \u2014 verify any autonomy pilots.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "SIBANYE",
+      "name": "Sibanye-Stillwater",
+      "sites": [
+        "Rustenburg/Kroondal PGM (NW)",
+        "Gold operations (Driefontein, Kloof)"
+      ],
+      "autonomyNote": "Digital/safety focus; autonomous surface haulage not widely reported \u2014 monitor.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "GOLDFIELDS",
+      "name": "Gold Fields",
+      "sites": [
+        "South Deep (Gauteng)"
+      ],
+      "autonomyNote": "South Deep is a fully mechanised deep gold mine and a digital-technology flagship; autonomous/remote mining engineering relevant.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "HARMONY",
+      "name": "Harmony Gold",
+      "sites": [
+        "Multiple deep-level gold mines (FS/KZN/GP)"
+      ],
+      "autonomyNote": "Mechanisation focus; monitor autonomy adoption.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "EXXARO",
+      "name": "Exxaro Resources",
+      "sites": [
+        "Grootegeluk (Limpopo, coal)"
+      ],
+      "autonomyNote": "Large open-cast coal operation; assess autonomous haulage readiness with OEM partners.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "SOUTH32",
+      "name": "South32",
+      "sites": [
+        "Hotazel manganese (NC)",
+        "Hillside Aluminium (Richards Bay)"
+      ],
+      "autonomyNote": "Global group pursuing automation; verify SA-site specifics.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "ASSMANG",
+      "name": "Assmang (Assore)",
+      "sites": [
+        "Black Rock manganese (NC)",
+        "Khumani iron ore (NC)"
+      ],
+      "autonomyNote": "NC resource operations; automation status: verify.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "PETRA",
+      "name": "Petra Diamonds",
+      "sites": [
+        "Cullinan (Gauteng)",
+        "Finsch (NC)"
+      ],
+      "autonomyNote": "Underground diamond mining; automation limited \u2014 monitor.",
+      "confidence": "MEDIUM"
+    }
   ],
   "miningTech": [
-    { "id": "CAT", "name": "Caterpillar", "note": "MineStar Command for autonomous haulage (large global fleet at Anglo's Australian ops; SA opportunity unclear).", "confidence": "HIGH" },
-    { "id": "KOMATSU", "name": "Komatsu", "note": "FrontRunner AHS; associated with Anglo American automated haulage deployments.", "confidence": "HIGH" },
-    { "id": "EPIROC", "name": "Epiroc", "note": "Underground digitalisation and automation (loaders, drill rigs).", "confidence": "HIGH" },
-    { "id": "SANDVIK", "name": "Sandvik", "note": "Automated underground trucks/loaders + AutoMine.", "confidence": "HIGH" }
+    {
+      "id": "CAT",
+      "name": "Caterpillar",
+      "note": "MineStar Command for autonomous haulage (large global fleet at Anglo's Australian ops; SA opportunity unclear).",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "KOMATSU",
+      "name": "Komatsu",
+      "note": "FrontRunner AHS; associated with Anglo American automated haulage deployments.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "EPIROC",
+      "name": "Epiroc",
+      "note": "Underground digitalisation and automation (loaders, drill rigs).",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "SANDVIK",
+      "name": "Sandvik",
+      "note": "Automated underground trucks/loaders + AutoMine.",
+      "confidence": "HIGH"
+    }
   ],
   "logistics": [
-    { "id": "TRANSNET", "name": "Transnet (freight rail, ports, pipelines)", "note": "SOE; operational constraints are a major push-factor toward road autonomy / corridor logistics; port automation ambitions at Durban/Ngqura \u2014 monitor recapitalisation.", "confidence": "HIGH" },
-    { "id": "DPW", "name": "DP World", "note": "Operates Durban Container Terminal (state of concession: verify current scope); global port-automation capability (AGVs, remote cranes).", "confidence": "MEDIUM-HIGH" },
-    { "id": "APMT", "name": "APM Terminals", "note": "Operator of a Durban container facility (Pier 2) \u2014 verify current status; global AGV expertise.", "confidence": "MEDIUM" },
-    { "id": "GRINDROD", "name": "Grindrod", "note": "Ports, rail, logistics; Richards Bay footprint.", "confidence": "HIGH" },
-    { "id": "IMPERIAL", "name": "Imperial Logistics (DP World)", "note": "Acquired by DP World; major SA 3PL with fleet telematics depth.", "confidence": "HIGH" },
-    { "id": "SUPERGROUP", "name": "Super Group", "note": "Contract logistics, vehicle dealerships; large fleet.", "confidence": "HIGH" },
-    { "id": "DSV", "name": "DSV", "note": "Global 3PL with large SA road network.", "confidence": "HIGH" },
-    { "id": "DHL", "name": "DHL Supply Chain / Express", "note": "Warehousing + delivery; last-mile robotics pilots elsewhere.", "confidence": "HIGH" }
+    {
+      "id": "TRANSNET",
+      "name": "Transnet (freight rail, ports, pipelines)",
+      "note": "SOE; operational constraints are a major push-factor toward road autonomy / corridor logistics; port automation ambitions at Durban/Ngqura \u2014 monitor recapitalisation.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "DPW",
+      "name": "DP World",
+      "note": "Operates Durban Container Terminal (state of concession: verify current scope); global port-automation capability (AGVs, remote cranes).",
+      "confidence": "MEDIUM-HIGH"
+    },
+    {
+      "id": "APMT",
+      "name": "APM Terminals",
+      "note": "Operator of a Durban container facility (Pier 2) \u2014 verify current status; global AGV expertise.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "GRINDROD",
+      "name": "Grindrod",
+      "note": "Ports, rail, logistics; Richards Bay footprint.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "IMPERIAL",
+      "name": "Imperial Logistics (DP World)",
+      "note": "Acquired by DP World; major SA 3PL with fleet telematics depth.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "SUPERGROUP",
+      "name": "Super Group",
+      "note": "Contract logistics, vehicle dealerships; large fleet.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "DSV",
+      "name": "DSV",
+      "note": "Global 3PL with large SA road network.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "DHL",
+      "name": "DHL Supply Chain / Express",
+      "note": "Warehousing + delivery; last-mile robotics pilots elsewhere.",
+      "confidence": "HIGH"
+    }
   ],
   "telecoms": [
-    { "id": "MTN", "name": "MTN", "note": "Metro 5G; national mobile coverage.", "confidence": "HIGH" },
-    { "id": "VODACOM", "name": "Vodacom", "note": "Metro 5G; IoT/V2X capability claims; enterprise IoT.", "confidence": "HIGH" },
-    { "id": "TELKOM", "name": "Telkom", "note": "Fixed + mobile; fibre footprint.", "confidence": "HIGH" },
-    { "id": "CELLC", "name": "Cell C", "note": "MVNO/roaming model.", "confidence": "HIGH" },
-    { "id": "LIQUID", "name": "Liquid Intelligent Technologies", "note": "Open-access fibre/wireless; corridor connectivity candidate for N1/N3 digital-road backhaul.", "confidence": "MEDIUM" },
-    { "id": "RAIN", "name": "Rain", "note": "5G FWA; spectrum position.", "confidence": "HIGH" }
+    {
+      "id": "MTN",
+      "name": "MTN",
+      "note": "Metro 5G; national mobile coverage.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "VODACOM",
+      "name": "Vodacom",
+      "note": "Metro 5G; IoT/V2X capability claims; enterprise IoT.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "TELKOM",
+      "name": "Telkom",
+      "note": "Fixed + mobile; fibre footprint.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "CELLC",
+      "name": "Cell C",
+      "note": "MVNO/roaming model.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "LIQUID",
+      "name": "Liquid Intelligent Technologies",
+      "note": "Open-access fibre/wireless; corridor connectivity candidate for N1/N3 digital-road backhaul.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "RAIN",
+      "name": "Rain",
+      "note": "5G FWA; spectrum position.",
+      "confidence": "HIGH"
+    }
   ],
   "energy": [
-    { "id": "ESKOM", "name": "Eskom", "note": "Grid operator; load-shedding has eased on recent evidence but firm capacity remains a risk variable affecting charging/fl eet reliability \u2014 reassess quarterly.", "confidence": "MEDIUM" },
-    { "id": "GRIDCARS", "name": "GridCars", "note": "Largest EV charging network operator in SA; charging for fleets.", "confidence": "HIGH" },
-    { "id": "RUBICON", "name": "Rubicon", "note": "Energy + e-mobility products, inverter/solar ecosystem.", "confidence": "HIGH" },
-    { "id": "BMWCH", "name": "BMW Charging", "note": "Premium charging network in SA (real); part of broader OEM charging clusters.", "confidence": "HIGH" },
-    { "id": "PVREN", "name": "Private renewables/wheeling sector", "note": "Post-2022 IPP/wheeling growth; depot charging + solar microgrids relevant to e-autonomy fleets.", "confidence": "MEDIUM" }
+    {
+      "id": "ESKOM",
+      "name": "Eskom",
+      "note": "Grid operator; load-shedding has eased on recent evidence but firm capacity remains a risk variable affecting charging/fl eet reliability \u2014 reassess quarterly.",
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "GRIDCARS",
+      "name": "GridCars",
+      "note": "Largest EV charging network operator in SA; charging for fleets.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "RUBICON",
+      "name": "Rubicon",
+      "note": "Energy + e-mobility products, inverter/solar ecosystem.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "BMWCH",
+      "name": "BMW Charging",
+      "note": "Premium charging network in SA (real); part of broader OEM charging clusters.",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "PVREN",
+      "name": "Private renewables/wheeling sector",
+      "note": "Post-2022 IPP/wheeling growth; depot charging + solar microgrids relevant to e-autonomy fleets.",
+      "confidence": "MEDIUM"
+    }
   ],
   "gaps": [
-    { "gap": "Autonomy stack vendor (full ADS)", "saState": "NONE-KNOWN", "action": "Monitor; potential import/licensing partner relationships" },
-    { "gap": "LDAR/radar/camera OEM (automotive grade)", "saState": "NONE-KNOWN", "action": "Localisation opportunity for integration/assembly, not silicon" },
-    { "gap": "Autonomous vehicle testing facility on public roads", "saState": "ABSENT-LEGALLY", "action": "Requires regulatory trigger; until then confined ODD testing on private land (mines, campuses, test tracks e.g. Gerotek)" },
-    { "gap": "National HD mapping / localisation service", "saState": "EMERGING-VIA-TELEMATICS", "action": "Build opportunity" }
+    {
+      "gap": "Autonomy stack vendor (full ADS)",
+      "saState": "NONE-KNOWN",
+      "action": "Monitor; potential import/licensing partner relationships"
+    },
+    {
+      "gap": "LDAR/radar/camera OEM (automotive grade)",
+      "saState": "NONE-KNOWN",
+      "action": "Localisation opportunity for integration/assembly, not silicon"
+    },
+    {
+      "gap": "Autonomous vehicle testing facility on public roads",
+      "saState": "ABSENT-LEGALLY",
+      "action": "Requires regulatory trigger; until then confined ODD testing on private land (mines, campuses, test tracks e.g. Gerotek)"
+    },
+    {
+      "gap": "National HD mapping / localisation service",
+      "saState": "EMERGING-VIA-TELEMATICS",
+      "action": "Build opportunity"
+    }
   ]
 }

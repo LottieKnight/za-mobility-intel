@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditshego Ventures | Automotive Intelligence Pitch</title>
+    <style>
+        :root {
+            --primary: #e8c15a;
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --accent: #3498db;
+            --gray: #1a1a1a;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            overflow: hidden;
+        }
+        .deck-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .slide {
+            min-width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 4em;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            width: 100%;
+            max-width: 1100px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .card {
+            background: var(--gray);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+        }
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 20px;
+            z-index: 100;
+        }
+        button {
+            background: var(--primary);
+            border: none;
+            padding: 15px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: opacity 0.2s;
+        }
+        button:hover { opacity: 0.8; }
+        .slide-number {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        th { background: var(--gray); color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="slide-number" id="slideNum">1 / 7</div>
+    <div class="controls">
+        <button onclick="move(-1)">Previous</button>
+        <button onclick="move(1)">Next</button>
+    </div>
+    <div class="deck-container" id="deck">
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <h1>Automotive Intelligence</h1>
+            <p>Connecting SA Exports to the Global AV Frontier</p>
+            <p style="font-size: 1.1em; margin-top: 40px;">Ditshego Ventures | Strategic Research Brief</p>
+        </div>
+
+        <!-- Slide 2: Economic Value -->
+        <div class="slide">
+            <h2>The Export Evolution</h2>
+            <p>Transitioning from <span class="highlight">Mechanical Assembly</span> to <span class="highlight">Digital IP</span>.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>The Rosslyn Engine</h3>
+                    <p>Historic focus: X3 production. Value: Labor and Assembly.</p>
+                </div>
+                <div class="card">
+                    <h3>The iX Future</h3>
+                    <p>Strategic focus: Electric/Hybrid. Value: Sensor data and AI training.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Technical Paradigm -->
+        <div class="slide">
+            <h2>Sensor Fusion vs. Pure Vision</h2>
+            <p>The battle between <span class="highlight">Absolute Measurement</span> and <span class="highlight">Probabilistic Inference</span>.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>BMW iX (Sensor Fusion)</th>
+                        <th>Tesla (Pure Vision)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stack</td>
+                        <td>Lidar + Radar + Cameras</td>
+                        <td>Cameras Only</td>
+                    </tr>
+                    <tr>
+                        <td>Philosophy</td>
+                        <td>Physical Safety Floor</td>
+                        <td>Neural World Modeling</td>
+                    </tr>
+                    <tr>
+                        <td>Verification</td>
+                        <td>Multi-modal Ground Truth</td>
+                        <td>Imitation Learning / Scale</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Slide 4: BMW iX Deep Dive -->
+        <div class="slide">
+            <h2>The iX Sensor Stack</h2>
+            <p>Building a high-fidelity map of reality.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Lidar & Radar</h3>
+                    <p>Precise 3D point clouds and velocity tracking. Operates in fog/rain where vision fails.</p>
+                </div>
+                <div class="card">
+                    <h3>Camera Array</h3>
+                    <p>Semantic segmentation: understanding *what* a pixel is (pedestrian vs. pole).</p>
+                </div>
+                <div class="card">
+                    <h3>Ultrasonics</h3>
+                    <p>High-precision proximity for urban ODD maneuvering.</p>
+                </div>
+                <div class="card">
+                    <h3>The Result</h3>
+                    <p>A verified, low-variance dataset for autonomous training.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: The Data Gap -->
+        <div class="slide">
+            <h2>The "Edge Case" Problem</h2>
+            <p>Training on the real world is slow and dangerous. We cannot wait for accidents to learn.</p>
+            <div class="card" style="width: 100%; max-width: 800px;">
+                <p>Current State: Vehicles collect data $ightarrow$ Engineers label data $ightarrow$ Model updates.</p>
+                <p style="color: var(--primary); font-weight: bold; margin-top: 20px;">The Gap: Sparse data for extreme "Edge Cases" (unmarked intersections, taxi pull-outs).</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: The Solution -->
+        <div class="slide">
+            <h2>Neural Reconstruction</h2>
+            <p>Leveraging <span class="highlight">NVIDIA Cosmos 3</span> to synthesize reality.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Digital Twins</h3>
+                    <p>Reconstruct the BMW iX sensor profile in OpenUSD.</p>
+                </div>
+                <div class="card">
+                    <h3>Synthetic Training</h3>
+                    <p>Generate 10,000 variations of one real-world edge case.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px;">Outcome: A vehicle trained on failure in simulation, ensuring safety on the tarmac.</p>
+        </div>
+
+        <!-- Slide 7: Roadmap -->
+        <div class="slide">
+            <h2>Strategic Roadmap</h2>
+            <div class="card" style="width: 100%; max-width: 800px; text-align: left;">
+                <p><strong>1. Export Integration:</strong> Align with TASEZ and BMW Rosslyn for data access.</p>
+                <p><strong>2. Model Training:</strong> Build the SA-specific World Model using Cosmos 3.</p>
+                <p><strong>3. Intelligence Hub:</strong> Position SA as the lead in "High-Fidelity AV Validation".</p>
+            </div>
+            <h3 style="color: var(--primary); margin-top: 40px;">From Automotive Export to AI Sovereignty.</h3>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const deck = document.getElementById('deck');
+        const slideNum = document.getElementById('slideNum');
+        const totalSlides = 7;
+
+        function move(dir) {
+            currentSlide = Math.max(0, Math.min(totalSlides - 1, currentSlide + dir));
+            deck.style.transform = `translateX(-${currentSlide * 100}vw)`;
+            slideNum.innerText = `${currentSlide + 1} / ${totalSlides}`;
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') move(1);
+            if (e.key === 'ArrowLeft') move(-1);
+        });
+    </script>
+</body>
+</html>

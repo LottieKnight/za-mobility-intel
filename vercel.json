@@ -57,6 +57,10 @@
     {
       "src": "/token-economics",
       "dest": "/public/token-economics.html"
+    },
+    {
+      "src": "/pitch-deck",
+      "dest": "/public/pitch-deck.html"
     }
   ]
 }
