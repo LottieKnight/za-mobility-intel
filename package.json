@@ -6,7 +6,8 @@
   "description": "South African Autonomous Mobility Intelligence & Strategic Advancement Dashboard",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "echo \"No build step required for static site\""
   },
   "engines": {
     "node": ">=18"
