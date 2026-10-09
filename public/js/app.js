@@ -1,6 +1,3 @@
-import { renderTokenEconomics } from './screens/token-eco
-  { id: "token-economics", k: "14", label: "Token Economics", hot: "" },nomics.js';
-// app.js — bootstrap, router, shell, global search
 import { loadAll, buildIndex, DB } from './data.js';
 import { samri } from './scoring.js';
 import { el, esc, badge } from './util.js';
@@ -17,10 +14,9 @@ import { renderOpportunities } from './screens/opportunities.js';
 import { renderStrategy } from './screens/strategy.js';
 import { renderKnowledge } from './screens/knowledge.js';
 import { renderWorld } from './screens/world.js';
+import { renderTokenEconomics } from './screens/token-economics.js';
 
 export const SCREENS = {
-  "token-economics": { id: "token-economics", title: "Token Economics", crumb: "whitepaper / compute costs", render: renderTokenEconomics },
-
   command: { id: 'command', title: 'Command Centre', crumb: 'national overview', render: renderCommand },
   map: { id: 'map', title: 'Geospatial Intelligence', crumb: 'map / layers / entities', render: renderMap },
   corridors: { id: 'corridors', title: 'Corridors & Roads', crumb: 'autonomy readiness / digital road twin', render: renderCorridors },
@@ -34,6 +30,7 @@ export const SCREENS = {
   strategy: { id: 'strategy', title: 'Strategy', crumb: 'entry · foresight · partnerships · pilot generator', render: renderStrategy },
   knowledge: { id: 'knowledge', title: 'Knowledge & Evidence', crumb: 'gaps · blind spots · provenance · audit', render: renderKnowledge },
   world: { id: 'world', title: 'SA vs World', crumb: 'competitive intelligence · gap analysis', render: renderWorld },
+  'token-economics': { id: 'token-economics', title: 'Token Economics', crumb: 'whitepaper / compute costs', render: renderTokenEconomics },
 };
 
 export const NAV = [
@@ -53,6 +50,7 @@ export const NAV = [
   { id: 'strategy', k: '11', label: 'Strategy', hot: '' },
   { id: 'knowledge', k: '12', label: 'Knowledge & Evidence', hot: '' },
   { id: 'world', k: '13', label: 'SA vs World', hot: '' },
+  { id: 'token-economics', k: '14', label: 'Token Economics', hot: '' },
 ];
 
 let index = [];
@@ -159,7 +157,6 @@ function onSearch(q) {
     r.addEventListener('click', () => {
       const sc = r.dataset.r;
       go(sc);
-      // scroll-in: not needed; simplest is confirm the nav jump
       hideSearch();
       const inp = document.getElementById('gSearch');
       inp.value = '';
