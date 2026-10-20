@@ -63,7 +63,15 @@
       "dest": "/public/token-economics.html"
     },
     {
+      "src": "/token-economics.html",
+      "dest": "/public/token-economics.html"
+    },
+    {
       "src": "/pitch-deck",
+      "dest": "/public/pitch-deck.html"
+    },
+    {
+      "src": "/pitch-deck.html",
       "dest": "/public/pitch-deck.html"
     },
     {

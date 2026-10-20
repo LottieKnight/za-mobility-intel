@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditshego Ventures | Pretoria Digital Twin</title>
+    <style>
+        :root {
+            --primary: #e8c15a;
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --neon: #00f2ff;
+            --gray: #1a1a1a;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            overflow: hidden;
+        }
+        .deck-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .slide {
+            min-width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 4em;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            width: 100%;
+            max-width: 1100px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .card {
+            background: var(--gray);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+        }
+        .card.neon {
+            border-left: 5px solid var(--neon);
+        }
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .card.neon h3 {
+            color: var(--neon);
+        }
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 20px;
+            z-index: 100;
+        }
+        button {
+            background: var(--primary);
+            border: none;
+            padding: 15px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: opacity 0.2s;
+        }
+        button:hover { opacity: 0.8; }
+        .slide-number {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .highlight-neon {
+            color: var(--neon);
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        th { background: var(--gray); color: var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="slide-number" id="slideNum">1 / 7</div>
+    <div class="controls">
+        <button onclick="move(-1)">Previous</button>
+        <button onclick="move(1)">Next</button>
+    </div>
+    <div class="deck-container" id="deck">
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <h1>The Pretoria Digital Twin</h1>
+            <p>A Geospatial Study in Urban Economic Circuits & Neural Reconstruction</p>
+            <p style="font-size: 1.1em; margin-top: 40px;">Ditshego Ventures | Strategic Research Brief for CMPG222</p>
+        </div>
+
+        <!-- Slide 2: The Vision -->
+        <div class="slide">
+            <h2>Spatial Data Convergence</h2>
+            <p>Moving beyond static mapping to <span class="highlight">Volumetric Intelligence</span>.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Physicality</h3>
+                    <p>High-resolution neural reconstruction of the urban fabric, honoring the pioneers of NeRF and Gaussian Splatting.</p>
+                </div>
+                <div class="card">
+                    <h3>Logic</h3>
+                    <p>Overlaying real-world geospatial datasets to visualize the invisible flows of capital and policy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Technical Pipeline -->
+        <div class="slide">
+            <h2>The Reconstruction Stack</h2>
+            <p>A multi-stage pipeline from raw imagery to <span class="highlight">OpenUSD</span>.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Tooling</th>
+                        <th>Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Capture</td>
+                        <td>COLMAP & nuRec</td>
+                        <td>Volumetric 3D Environments</td>
+                    </tr>
+                    <tr>
+                        <td>Integration</td>
+                        <td>OSMnx & GeoPandas</td>
+                        <td>3,000+ Building Footprints / 1,100+ Road Segments</td>
+                    </tr>
+                    <tr>
+                        <td>Unification</td>
+                        <td>OpenUSD (.usda)</td>
+                        <td>Unified Scene Description for Omniverse</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Slide 4: Geospatial Precision -->
+        <div class="slide">
+            <h2>Data-Driven Grounding</h2>
+            <p>Integrating OpenStreetMap (OSM) data for academic rigor.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Footprint Analysis</h3>
+                    <p>Mapping 3,000+ building footprints to ensure the digital twin aligns with municipal reality.</p>
+                </div>
+                <div class="card">
+                    <h3>Network Topology</h3>
+                    <p>1,100+ road segments integrated to simulate realistic transit and logistics flow.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: The Economic Circuit -->
+        <div class="slide">
+            <h2>The Logic Layer</h2>
+            <p>Visualizing the <span class="highlight-neon">Economic Circuit</span> of Pretoria.</p>
+            <div class="grid">
+                <div class="card neon">
+                    <h3>Knowledge Capital</h3>
+                    <p>Cyan conduits tracing the flow of intellectual property from the Academic Hub.</p>
+                </div>
+                <div class="card neon">
+                    <h3>Investment & Policy</h3>
+                    <p>Dynamic visualization of funding flows between the Financial District and Government Center.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px;">Outcome: A spatial representation of economic interdependency.</p>
+        </div>
+
+        <!-- Slide 6: Visual Fidelity -->
+        <div class="slide">
+            <h2>Cinematic Validation</h2>
+            <p>Leveraging RTX lighting and PBR materials for professional-grade simulation.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>PBR Materials</h3>
+                    <p>Physically Based Rendering (Glass, Concrete, Asphalt) for photorealistic accuracy.</p>
+                </div>
+                <div class="card">
+                    <h3>RTX Lighting</h3>
+                    <p>Cinematic shadows and global illumination to provide depth and scale.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Strategic Roadmap -->
+        <div class="slide">
+            <h2>The Future of Curriculum</h2>
+            <div class="card" style="width: 100%; max-width: 800px; text-align: left;">
+                <p><strong>1. Academic Integration:</strong> Establishing the Digital Twin as a blueprint for Data Analytics education.</p>
+                <p><strong>2. Scalability:</strong> Expanding the model to include real-time IoT sensor data feeds.</p>
+                <p><strong>3. NVIDIA Partnership:</strong> Bridging the gap between the university and the NVIDIA University Ambassador Program.</p>
+            </div>
+            <h3 style="color: var(--primary); margin-top: 40px;">From Data Analytics to Physical Simulation Sovereignty.</h3>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const deck = document.getElementById('deck');
+        const slideNum = document.getElementById('slideNum');
+        const totalSlides = 7;
+
+        function move(dir) {
+            currentSlide = Math.max(0, Math.min(totalSlides - 1, currentSlide + dir));
+            deck.style.transform = `translateX(-${currentSlide * 100}vw)`;
+            slideNum.innerText = `${currentSlide + 1} / ${totalSlides}`;
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') move(1);
+            if (e.key === 'ArrowLeft') move(-1);
+        });
+    </script>
+</body>
+</html>
